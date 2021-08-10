@@ -1,8 +1,8 @@
 /* devlopr-jekyll styling */
 
 /* variables */
-$body-typeface:'Karantina', sans-serif;
-$nav-typeface: "Gill sans";
+$body-typeface:'Bebas Neue', cursive;
+$nav-typeface: 'Roboto', sans-serif;
 $mono-typeface: Menlo, Monaco, monospace;
 $text-width: 650px;
 
@@ -117,7 +117,7 @@ ol, ul {
 body {
     background-color: var(--main-background-color) !important;
     color: var(--main-text-color) !important;
-    font-family: 'Karantina', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
     font-feature-settings: "kern"on;
     font-size: 1.4rem;
     font-variant-numeric: oldstyle-nums;
@@ -200,6 +200,7 @@ header {
     height: auto;
     width: 100%;
     padding: 11px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 
