@@ -1,8 +1,8 @@
 /* devlopr-jekyll styling */
 
 /* variables */
-$body-typeface:'Bebas Neue', cursive;
-$nav-typeface: 'Bebas Neue', cursive;
+$body-typeface:'Bebas Neue';
+$nav-typeface: 'Bebas Neue';
 $mono-typeface: Menlo, Monaco, monospace;
 $text-width: 650px;
 
@@ -117,7 +117,7 @@ ol, ul {
 body {
     background-color: var(--main-background-color) !important;
     color: var(--main-text-color) !important;
-    font-family: 'Bebas Neue', cursive !important;
+    font-family: 'Bebas Neue' !important;
     font-feature-settings: "kern"on;
     font-size: 1.4rem;
     font-variant-numeric: oldstyle-nums;
