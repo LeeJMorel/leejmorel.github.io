@@ -35,7 +35,7 @@ typewrite-text: Forge your own path
 # Experiences
 author_work_experiences:
             - company_name: Bellevue College
-              company_logo: BClogo.png
+              company_logo: BClogo.jpg
               company_url: https://www.bellevuecollege.edu/
               designation: Trio Tutor
               description: Math and Programming tutor for first-generation college students. Educated others in offbeat ways to give multiple new perspectives, which improved understanding and performance for students.
@@ -72,7 +72,7 @@ author_education_details:
                 college_url: https://www.bellevuecollege.edu/
                 college_degree: General Transfer
                 description: A.A.S. - June 2021
-                description: GPA - 3.93
+                extra: GPA - 3.93
                 visibility: true
 
 # Projects
