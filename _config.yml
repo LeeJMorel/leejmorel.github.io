@@ -112,7 +112,7 @@ linkedin_username: leejanzen91
 #mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
-#getform_endpoint: 1de06dc7-823e-409c-ad7b-8ab359b6d6b7
+getform_endpoint: 1de06dc7-823e-409c-ad7b-8ab359b6d6b7
 #formspree_email: johndoe@gmail.com
 
 # releases - widget can be (sidebar, modal or embed)
@@ -152,7 +152,7 @@ paginate_path: "/blog/page/:num/"
 
 collections:
   products:
-    output: true
+    output: false
   authors:
     output: true
 
