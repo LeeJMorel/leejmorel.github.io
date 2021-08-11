@@ -65,8 +65,8 @@ author_education_details:
                 college_name: Bellevue College
                 college_url: https://www.bellevuecollege.edu/
                 college_degree: General Transfer
-                description: A.A.S. - June 2021
-                extra: GPA - 3.93
+                description: A.A.S. -June 2021- GPA 3.93
+                #extra: GPA - 3.93
                 visibility: true
 # Projects
 author_project_details:
