@@ -8,8 +8,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: Home
       url: /
-    - text: About
-      url: /about
+    - text: Portfolio
+      url: /portfolio
    # - text: Blog
   #    url: /blog
    # - text: Gallery
