@@ -10,8 +10,8 @@ urls:
       url: /
     - text: Portfolio
       url: /portfolio
-   # - text: Blog
-  #    url: /blog
+    - text: Blog
+      url: /blog
    # - text: Gallery
    #   url: /gallery
    # - text: Shop
