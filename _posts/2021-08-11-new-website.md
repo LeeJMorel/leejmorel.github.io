@@ -6,7 +6,7 @@ author: leejanzen91
 date: '2021-08-11 1:35:23 +0530'
 category: ['updates']
 tags: updates
-thumbnail: /assets/img/posts/code.jpg
+thumbnail: /assets/img/posts/Pikespeak1.jpg
 keywords: devlopr jekyll, building a portfolio, new programmer, web development
 usemathjax: false
 permalink: /blog/new-website/
