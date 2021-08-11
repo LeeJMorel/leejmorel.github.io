@@ -2,16 +2,14 @@ title: Lee Janzen
 subtitle: Junior Software Engineer and Technical Manager
 description: >- # this means to ignore newlines until "baseurl:"
     Lee Janzen is a builder, leader, and force of curiosity. They are new to software engineering and passionate about data driven projects.
-
 url: "https://leejanzen91.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
-
 # Navigation
 urls:
     - text: Home
       url: /
-    - text: Portfolio
-      url: /portfolio
+    - text: About
+      url: /about
    # - text: Blog
   #    url: /blog
    # - text: Gallery
@@ -20,8 +18,6 @@ urls:
   #    url : /shop
     - text: Contact
       url : /contact
-
-
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.jpg
@@ -31,18 +27,17 @@ author_email: "leejanzen91@gmail.com"
 author_location: Seattle, WA
 author_website_url: "https://sujaykundu.com"
 typewrite-text: Forge your own path
-
 # Experiences
 author_work_experiences:
-              company_name: Bellevue College
+            - company_name: Bellevue College
               company_logo: BClogo.jpg
               company_url: https://www.bellevuecollege.edu/
               designation: Trio Tutor
               description: Math and Programming tutor for first-generation college students. Educated others in offbeat ways to give multiple new perspectives, which improved understanding and performance for students.
               visibility: true
-              company_name: Lee Janzen Co.
+            - company_name: Lee Janzen Co.
               company_logo: logosewn.png
-              company_url: https://microsoft.com
+              #company_url: https://microsoft.com
               designation: Owner & Freelancer
               description: Researched innovative business management and advertising solutions. Created unique code for small personal software projects. Experienced artist that designs individual works based on customer feedback, combinging code with fashion to make one of a kind commisoned cosplays for clients.
               visibility: true
@@ -52,16 +47,15 @@ author_work_experiences:
               designation: General Manager
               description: Grew locally owned, eco-friendly maid company from 5 clients to 300+.Triaged and resolved customer conflicts while managing small business. Experienced at lead generation, network marketing, and pitching product. Practiced with Emotional Intelligence for navigating workplace relationships with employees, colleagues, and upper management. Sold client list for owner profit at end of start up phase out.
               visibility: true
-             company_name: King Soopers
+              company_name: King Soopers
               company_logo: KSlogo.png
               company_url: https://www.kingsoopers.com/
               designation: Assistent Deli Manager
               description: Worked up from grocery bagging position to 3 years of management, where I recieved management training through kroger's leadership program. Managed teams of up to 25 employees, working alongside team members to accomplish targeted goals. Developed excellent communication skills to keep team solution-focused and detail-oriented. Addressed team management problems with confidence and assertiveness. Hit projected targets on schedule & within budget, while maintaining employee advancement. Proposed original solutions to a problem that saved my company thousands a year.
               visibility: true
-
 # Education
 author_education_details:
-                college_logo: UWlogo.jpg
+              - college_logo: UWlogo.jpg
                 college_name: Univeristy of Washington - Seattle
                 college_url: https://www.cs.washington.edu/
                 college_degree: CS with Data Science Minor
@@ -71,9 +65,9 @@ author_education_details:
                 college_name: Bellevue College
                 college_url: https://www.bellevuecollege.edu/
                 college_degree: General Transfer
-                description: A.A.S. - June 2021 - GPA 3.93
+                description: A.A.S. - June 2021
+                extra: GPA - 3.93
                 visibility: true
-
 # Projects
 author_project_details:
               - project_thumbnail: gamershub.png
@@ -86,7 +80,6 @@ author_project_details:
                 project_description: A Platform built for Hackers and Penetration Testers
                 project_url: https://hack4r.com
                 visibility: true
-
 # social links
 #twitter_username: johndoe
 github_username:  leejanzen91
@@ -98,41 +91,31 @@ linkedin_username: leejanzen91
 #telegram_username: johndoe
 #dribbble_username: johndoe
 #flickr_username: johndoe
-
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
-
 # disqus_shortname: sujay-kundu
 #hyvor_talk_website_id: 476
-
 # wakatime username (coding activity)
 wakatime_username: leejanzen91
-
 # mailchimp embedded form url (newsletter):
 #mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
-
 # contact form - (choose formspress or getform)
 getform_endpoint: 1de06dc7-823e-409c-ad7b-8ab359b6d6b7
 #formspree_email: johndoe@gmail.com
-
 # releases - widget can be (sidebar, modal or embed)
 #olvy_organization: devlopr
 #olvy_widget_type: sidebar
-
 # syntax highlighter
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: false
-
 # pagination of posts
 paginate: 4
 per_page: 4
 paginate_path: "/blog/page/:num/"
-
 # minify
 # compress_html:
 #   clippings: all
@@ -140,7 +123,6 @@ paginate_path: "/blog/page/:num/"
 #   endings: all
 #   ignore:
 #     envs: ['development']
-
 # Archives
 # jekyll-archives:
 #   enabled:
@@ -148,13 +130,11 @@ paginate_path: "/blog/page/:num/"
 #   layout: archive
 #   permalinks:
 #     category: '/category/:name/'
-
 collections:
   products:
     output: false
   authors:
     output: true
-
 defaults:
   -
     scope:
@@ -168,7 +148,6 @@ defaults:
     values:
       layout: author
       permalink: /blog/authors/:slug
-
 # Build settings
 plugins:
   - jekyll-paginate
@@ -177,7 +156,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-menus
   - jekyll-admin
-
 # Jekyll Admin Config
 jekyll_admin:
   # hidden_links:
@@ -187,8 +165,6 @@ jekyll_admin:
   #   - datafiles
   #   - configuration
   homepage: "posts"
-
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -196,7 +172,6 @@ jekyll_admin:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -208,5 +183,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
 destination: ./build
