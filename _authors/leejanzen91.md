@@ -2,7 +2,7 @@
    name: Lee Janzen
    username: leejanzen91
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
-   site: https://sujaykundu.com
+   site: https://leejanzen91.github.io/
    avatar: leejanzen91.png
    email: leejanzen91@gmail.com
    social:
