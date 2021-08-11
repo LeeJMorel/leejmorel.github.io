@@ -1,9 +1,9 @@
 # Add Authors here
 Lee Janzen:
    name: Lee Janzen
-   username: xplor4r
+   username: leejanzen91
    site: https://sujaykundu.com
-   avatar: xplor4r.png
+   avatar: johndoe.png
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
    email: leejanzen91@gmail.com
    social:
@@ -11,21 +11,4 @@ Lee Janzen:
         url: "https://github.com/leejanzen91"
       - title: "linkedin"
         url: "https://www.linkedin.com/in/leejanzen91"
-
-xplor4r:
-   name: Sujay kundu
-   username: xplor4r
-   site: https://sujaykundu.com
-   avatar: xplor4r.png
-   bio: "Full Stack Web Developer, based in Bangalore, India"
-   email: mail@sujaykundu.com
-   social:
-      - title: "github"
-        url: "https://github.com/sujaykundu777"
-      - title: "linkedin"
-        url: "https://www.linkedin.com/in/sujaykundu"
-      - title: "youtube"
-        url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
-      - title: "facebook"
-        url: "https://www.facebook.com/sujay.kundu2"
 

@@ -1,8 +1,8 @@
 ---
    name: Lee Janzen
-   username: xplor4r
+   username: leejanzen91
    site: https://sujaykundu.com
-   avatar: xplor4r.png
+   avatar: johndoe.png
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
    email: leejanzen91@gmail.com
    social:
