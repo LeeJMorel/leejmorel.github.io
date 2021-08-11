@@ -46,6 +46,7 @@ author_work_experiences:
               company_url: https://www.facebook.com/greencleancoloradosprings
               designation: General Manager
               description: Start-up managment with ground floor company development. Ended in profitable merger.
+              visibility: true
             - company_name: King Soopers
               company_logo: KSlogo.png
               company_url: https://www.kingsoopers.com/
@@ -69,16 +70,16 @@ author_education_details:
                 visibility: true
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: Morse.png
+                project_title: Morse Code Translator
+                project_description: A translator program for Morse or English text
+                project_url: https://github.com/leejanzen91/Morse-Code-Translator
                 visibility: true
               - project_thumbnail: hack4r.PNG
                 project_title: Hack4r
                 project_description: A Platform built for Hackers and Penetration Testers
                 project_url: https://hack4r.com
-                visibility: true
+                visibility: false
 # social links
 #twitter_username: johndoe
 github_username:  leejanzen91
@@ -110,7 +111,7 @@ permalink: pretty
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: false
+show_author_project_details: true
 # pagination of posts
 paginate: 4
 per_page: 4
