@@ -161,21 +161,7 @@ layout: default
           <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2">
-          <img
-            src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}"
-            class="company-logo"
-          />
-        </div>
-        <div class="col-md-6">
-          <h4 class="experience-title">{{ exp.designation }}</h4>
-          <h6 class="experience-info">{{ exp.company_name}}</h6>
-          <p class="experience-desc">{{ exp.description }}</p>
-          <p class="experience-extra">{{ exp.extra}}</p>
-          <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
-        </div>
-      </div>
+      
       {% endif %} {% endfor %}
     </div>
     {% endif %} {% if site.show_author_education_details == true %}

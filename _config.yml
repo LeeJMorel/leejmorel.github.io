@@ -34,13 +34,13 @@ typewrite-text: Forge your own path
 
 # Experiences
 author_work_experiences:
-            - company_name: Bellevue College
+              company_name: Bellevue College
               company_logo: BClogo.jpg
               company_url: https://www.bellevuecollege.edu/
               designation: Trio Tutor
               description: Math and Programming tutor for first-generation college students. Educated others in offbeat ways to give multiple new perspectives, which improved understanding and performance for students.
               visibility: true
-            - company_name: Lee Janzen Co.
+              company_name: Lee Janzen Co.
               company_logo: logosewn.png
               company_url: https://microsoft.com
               designation: Owner & Freelancer
@@ -71,8 +71,7 @@ author_education_details:
                 college_name: Bellevue College
                 college_url: https://www.bellevuecollege.edu/
                 college_degree: General Transfer
-                description: A.A.S. - June 2021
-                extra: GPA - 3.93
+                description: A.A.S. - June 2021 - GPA 3.93
                 visibility: true
 
 # Projects
