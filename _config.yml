@@ -33,25 +33,23 @@ author_work_experiences:
               company_logo: BClogo.jpg
               company_url: https://www.bellevuecollege.edu/
               designation: Trio Tutor
-              description: Math and Programming tutor for first-generation college students. Educated others in offbeat ways to give multiple new perspectives, which improved understanding and performance for students.
+              description: Teaching other first-generation college students how to succeed in math, communications, and programming.
               visibility: true
             - company_name: Lee Janzen Co.
               company_logo: logosewn.png
               #company_url: https://microsoft.com
               designation: Owner & Freelancer
-              description: Researched innovative business management and advertising solutions. Created unique code for small personal software projects. Experienced artist that designs individual works based on customer feedback, combinging code with fashion to make one of a kind commisoned cosplays for clients.
+              description: Established new networks utilizing my diverse skills and entrepreneurship.
               visibility: true
             - company_name: Greenclean
               company_logo: greenclean.jpg
               company_url: https://www.facebook.com/greencleancoloradosprings
               designation: General Manager
-              description: Grew locally owned, eco-friendly maid company from 5 clients to 300+.Triaged and resolved customer conflicts while managing small business. Experienced at lead generation, network marketing, and pitching product. Practiced with Emotional Intelligence for navigating workplace relationships with employees, colleagues, and upper management. Sold client list for owner profit at end of start up phase out.
-              visibility: true
-            - company_name: King Soopers
+              description: Start-up managment with ground floor company development. Ended in profitable merger.
               company_logo: KSlogo.png
               company_url: https://www.kingsoopers.com/
               designation: Assistent Deli Manager
-              description: Worked up from grocery bagging position to 3 years of management, where I recieved management training through kroger's leadership program. Managed teams of up to 25 employees, working alongside team members to accomplish targeted goals. Developed excellent communication skills to keep team solution-focused and detail-oriented. Addressed team management problems with confidence and assertiveness. Hit projected targets on schedule & within budget, while maintaining employee advancement. Proposed original solutions to a problem that saved my company thousands a year.
+              description: Practiced diverse team leadership while turning a loss leader deli into a profiting assest.
               visibility: true
 # Education
 author_education_details:
