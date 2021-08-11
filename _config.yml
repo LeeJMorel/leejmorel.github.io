@@ -61,7 +61,7 @@ author_education_details:
                 college_degree: CS with Data Science Minor
                 description: B.S. - Graduation expected June 2023
                 visibility: true
-                college_logo: BClogo.jpg
+              - college_logo: BClogo.jpg
                 college_name: Bellevue College
                 college_url: https://www.bellevuecollege.edu/
                 college_degree: General Transfer
