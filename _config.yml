@@ -45,18 +45,18 @@ author_work_experiences:
               company_logo: greenclean.jpg
               company_url: https://www.facebook.com/greencleancoloradosprings
               designation: General Manager
-              description: Start-up managment with ground floor company development. Ended in profitable merger.
+              description: Start-up management with ground floor company development. Ended in profitable merger.
               visibility: true
             - company_name: King Soopers
               company_logo: KSlogo.png
               company_url: https://www.kingsoopers.com/
-              designation: Assistent Deli Manager
-              description: Practiced diverse team leadership while turning a loss leader deli into a profiting assest.
+              designation: Assistant Deli Manager
+              description: Practiced diverse team leadership while turning a loss leader deli into a profiting asset.
               visibility: true
 # Education
 author_education_details:
               - college_logo: UWlogo.jpg
-                college_name: Univeristy of Washington - Seattle
+                college_name: University of Washington - Seattle
                 college_url: https://www.cs.washington.edu/
                 college_degree: CS with Data Science Minor
                 description: B.S. - Graduation expected June 2023
