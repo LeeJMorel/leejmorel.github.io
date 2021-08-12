@@ -70,7 +70,7 @@ author_education_details:
                 visibility: true
 # Projects
 author_project_details:
-              - project_thumbnail: morse.PNG
+              - project_thumbnail: BClogo.jpg
                 project_title: Morse Code Translator
                 project_description: A translator program for Morse or English text
                 project_url: https://github.com/leejanzen91/Morse-Code-Translator
