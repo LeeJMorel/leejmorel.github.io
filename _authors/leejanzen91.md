@@ -1,6 +1,6 @@
 ---
    name: Lee Janzen
-   username: leejanzen91
+   username: leejanzen
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
    site: https://leejanzen.github.io/
    avatar: leejanzen91.png
