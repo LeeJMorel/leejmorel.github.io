@@ -2,7 +2,7 @@
 layout: post
 title:  "New Website"
 summary: "Creating your portfolio"
-author: leejanzen91
+author: leejanzen
 date: '2021-08-11 1:35:23 +0530'
 category: ['updates']
 tags: updates
