@@ -2,7 +2,7 @@ title: Lee Janzen
 subtitle: Junior Software Engineer and Technical Manager
 description: >- # this means to ignore newlines until "baseurl:"
     Lee Janzen is a builder, leader, and force of curiosity. They are new to software engineering and passionate about data driven projects.
-url: "https://leejanzen91.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://leejanzen.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 # Navigation
 urls:
@@ -23,9 +23,9 @@ urls:
 author_logo: profile.jpg
 author: Lee Janzen
 author_bio: Lee Janzen is a builder, leader, and force of curiosity. They are new to software engineering and passionate about data driven projects.
-author_email: "leejanzen91@gmail.com"
+author_email: "ljanzen@uw.edu"
 author_location: Seattle, WA
-author_website_url: "https://leejanzen91.github.io/"
+author_website_url: "https://leejanzen.github.io/"
 typewrite-text: Forge your own path
 # Experiences
 author_work_experiences:
@@ -73,7 +73,7 @@ author_project_details:
               - project_thumbnail: morsect.png
                 project_title: Morse Code Translator
                 project_description: A translator program for Morse or English text
-                project_url: https://github.com/leejanzen91/Morse-Code-Translator
+                project_url: https://github.com/leejanzen/Morse-Code-Translator
                 visibility: true
               - project_thumbnail: hack4r.PNG
                 project_title: Hack4r
@@ -82,9 +82,9 @@ author_project_details:
                 visibility: false
 # social links
 #twitter_username: johndoe
-github_username:  leejanzen91
+github_username:  leejanzen
 #facebook_username: johndoe
-linkedin_username: leejanzen91
+linkedin_username: leejanzen
 #behance_username: johndoe
 #instagram_username: leejanzen91
 #medium_username: johndoe
