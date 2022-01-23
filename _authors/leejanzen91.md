@@ -2,7 +2,7 @@
    name: Lee Janzen-Morel
    username: leemorel
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
-   site: https://leemorel.github.io/
+   site: https://leejmorel.github.io/
    avatar: leejanzen91.png
    email: leejmorel@gmail.com
    social:
