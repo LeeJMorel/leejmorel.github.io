@@ -1,14 +1,14 @@
 # Add Authors here
 leejanzen:
-   name: Lee Janzen
+   name: Lee Janzen-Morel
    username: leejanzen
-   site: https://leejanzen.github.io/
+   site: https://leejmorel.github.io/
    avatar: leejanzen91.png
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
-   email: leejanzen91@gmail.com
+   email: leejmorel@gmail.com
    social:
       - title: "github"
-        url: "https://github.com/leejanzen"
+        url: "https://github.com/leejmorel"
       - title: "linkedin"
         url: "https://www.linkedin.com/in/leejanzen"
 
