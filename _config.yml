@@ -23,7 +23,7 @@ urls:
 author_logo: profile.jpg
 author: Lee Janzen-Morel
 author_bio: Lee Morel is a builder, leader, and force of curiosity. They are new to software engineering and passionate about data driven projects.
-author_email: "leejmorel@gmail.com"
+author_email: "lee@morels.family"
 author_location: Seattle, WA
 author_website_url: "https://leejmorel.github.io/"
 typewrite-text: Forge your own path
@@ -84,7 +84,7 @@ author_project_details:
 #twitter_username: johndoe
 github_username:  leejmorel
 #facebook_username: johndoe
-linkedin_username: leejanzen
+linkedin_username: leejmorel
 #behance_username: johndoe
 #instagram_username: leejanzen91
 #medium_username: johndoe
