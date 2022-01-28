@@ -3,7 +3,7 @@
    username: leemorel
    bio: "Junior Software Engineer and Technical Manager, Based in Seattle, WA"
    site: https://leejmorel.github.io/
-   avatar: leejanzen91.png
+   avatar: leemorel.png
    email: lee@morels.family
    social:
       - title: "github"
