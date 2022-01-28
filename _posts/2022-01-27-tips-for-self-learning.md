@@ -12,7 +12,7 @@ usemathjax: false
 permalink: /blog/tips-for-self-learning/
 ---
 
-## 3 Secrects to Self-Learning
+## 3 Secrets to Self-Learning
 
 It's no secret that I was (poorly) homeschooled growing up. I didn't learn math or science or have lessons and teachers. Every day it was up to me what to do, and most of the time I had no idea what that should be. But OH did I love to read and learning anything I could!
 
