@@ -4,7 +4,7 @@ title:  "Steps to self-learning"
 summary: "From someone who never attended K-12 school"
 author: leemorel
 date: '2022-01-27 3:35:23 +0530'
-category: ['blog post']
+category: ['blog-post']
 tags: code environment, set up
 thumbnail: /assets/img/posts/X_MtBaker.jpg
 keywords: life skills, self improvement, learning, growth mindset
