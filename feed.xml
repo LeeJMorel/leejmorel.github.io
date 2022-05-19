@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lee Janzen-Morel</title>
+    <description>Lee Morel is a builder, leader, and force of curiosity. They are new to software engineering and passionate about data driven projects.</description>
+    <link>https://leejmorel.github.io/</link>
+    <atom:link href="https://leejmorel.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 May 2022 20:45:52 +0000</pubDate>
+    <lastBuildDate>Thu, 19 May 2022 20:45:52 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+
+    
+      <item>
+        <title>Steps to self-learning</title>
+        <description>&lt;h2 id=&quot;3-secrets-to-self-learning&quot;&gt;3 Secrets to Self-Learning&lt;/h2&gt;
+
+&lt;p&gt;It’s no secret that I was (poorly) homeschooled growing up. I didn’t learn math or science or have lessons and teachers. Every day it was up to me what to do, and most of the time I had no idea what that should be. But OH did I love to read and learning anything I could!&lt;/p&gt;
+
+&lt;p&gt;That passionate curiosity is what took me from a childhood without an education to one of the top CS Schools in the world. My peers these days had a lot more resources than me, parents cheering them on, amazing high school programs filled with opportunity, and wonderful experiences they’ve shared with me that I’ve learned so much from. But I have my own skills I’ve been able to share with them as well, one of which is a proven success in self learning. So, here’s some of my top tips and tricks!&lt;/p&gt;
+
+&lt;h3 id=&quot;1-you-learn-more-from-others-than-you-do-anywhere-else&quot;&gt;1. You learn more from others than you do anywhere else&lt;/h3&gt;
+
+&lt;p&gt;Diversity is something we talk about a lot these days, but it’s true, diversity is the key to growth. I’ve read hundreds of books in my life, from textbooks to sci-fi, but the way I was truly able to grow my knowledge was my ability to sit and actively listen to those with wisdom to share. So many people are eager to teach if you only let them, so, let them! I have learned just as much from my 5-year-old observing butterflies as I have from a quantum physics professor. When you see people’s story as a gift, you will find no shortage of opportunities to learn and grow.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-fear-of-failure-is-your-biggest-enemy&quot;&gt;2. Fear of failure is your biggest enemy&lt;/h3&gt;
+
+&lt;p&gt;Recently I was working very hard to understand a difficult mathematics problem. I struggled with it a lot, and when midterms came, I flunked. I very excitedly went to show my friends “look! I got 8/50!” and was met with concerns for my wellbeing. One thing was very clear, we approached failure differently. See, after the exam the professor agreed to sit with me and explained in detail each of my issues. I went home with 3 new textbooks to read, and an extensive sheet of information. That half hour talk taught me more than the entire class had thus far. That midterm was very difficult, and most of the class dropped out. I stayed. I devoured the material and found myself applying new conceptual ideas from that class into my coding. My final grade came out at a solid “okay”, but I wasn’t concerned with my grades, I was concerned with my ability to learn, and this teacher was challenging me! To me failure is part of how we learn. Hard work is the strongest definer of my success, not talent or giftedness. Those who left the course ended up leaving because the challenge made failure a very real possibility, the same challenge which made me so excited to learn from the professor to begin with.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-be-passionate&quot;&gt;3. Be passionate&lt;/h3&gt;
+
+&lt;p&gt;One time I read a book on art history in ancient Rome. Now, I’m interested in a lot of things, economics, mathematics, sociology, neuroscience, fabric art, and aquaponics to name a few of the recent most read topics. Turns out, I have absolutely no interest in ancient Rome. After I finished the textbook, I found I couldn’t remember a single thing I read, a first for me. I felt it important to know history however, so I tried reading it again, this time taking notes. The second time while I did come out with some knowledge, I had barely absorbed it, and within a month it was all forgotten again. Unless you are excited to learn something it’s going to be so much harder to see progress in is.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jan 2022 22:05:23 +0000</pubDate>
+        <link>https://leejmorel.github.io/blog/tips-for-self-learning/</link>
+        <guid isPermaLink="true">https://leejmorel.github.io/blog/tips-for-self-learning/</guid>
+      </item>
+    
+      <item>
+        <title>New Website</title>
+        <description>&lt;h2 id=&quot;building-my-portfolio&quot;&gt;Building my portfolio&lt;/h2&gt;
+
+&lt;p&gt;A few applications into the summer 2022 internship season and I knew my LinkedIn page wouldn’t show the full picture of my capabilities. So it was time to bunker down and crank out my personal website.&lt;/p&gt;
+
+&lt;p&gt;So much of my skills right now lie outside of programming. My problem solving skills, communication, and ability to see the big picture are difficult to convey in a one page feature churned through resume reader bots. Even beyond this, I wanted a way to feature the projects I had been tinkering on over the summer, and a space that could grow with me as my skills did.&lt;/p&gt;
+
+&lt;p&gt;College has been up until now mostly general education in its focus, and I knew with my acceptance to Paul G. Allen’s School of Engineering that my lessons were about to turn into a firehose of information I had been eager to learn for the last 2 years. My goals in expanding from business management to tech were always to broaden my understanding, to create better ideas, products, and solutions. I’m excited to see who I collaborate with, and post about future projects as I get to work with other diverse minds at University of Washington the next two years.&lt;/p&gt;
+
+&lt;p&gt;This website was forked from developer &lt;a href=&quot;https://github.com/sujaykundu777&quot;&gt;Sujay Kundu&lt;/a&gt;, as an opportunity for me to practice with Git, command prompt mastery, Ruby (the first language I learned), and see if I could in fact still brush off the dust and remember my HTML/css basics (I can!). Buy them a coffee and check them out if you like the website!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Aug 2021 20:05:23 +0000</pubDate>
+        <link>https://leejmorel.github.io/blog/new-website/</link>
+        <guid isPermaLink="true">https://leejmorel.github.io/blog/new-website/</guid>
+      </item>
+    
+
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title></title>
+            <description>&lt;h3&gt;  {{ page.title }} &lt;/h3&gt;
+
+&lt;div id=&quot;categories&quot;&gt;
+{% for category in site.categories %}
+  &lt;div class=&quot;category-box&quot; &gt;
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    &lt;div id=&quot;#{{ category_name | slugize }}&quot;&gt;&lt;/div&gt;
+    &lt;h4 class=&quot;category-head&quot;&gt;&lt;a href=&quot;{{ site.baseurl }}/blog/categories/{{ category_name }}&quot;&gt;{{ category_name }}&lt;/a&gt;&lt;/h4&gt;
+    &lt;a name=&quot;{{ category_name | slugize }}&quot;&gt;&lt;/a&gt;
+     {% for post in site.categories[category_name] %}
+    &lt;article class=&quot;center&quot;&gt;
+      &lt;h6 &gt;&lt;a href=&quot;{{ site.baseurl }}{{ post.url }}&quot;&gt;{{post.title}}&lt;/a&gt;&lt;/h6&gt;
+    &lt;/article&gt;
+
+
+    {% endfor %}
+
+  &lt;/div&gt;
+{% endfor %}
+&lt;/div&gt;
+
+
+</description>
+            <link>https://leejmorel.github.io/blog/categories/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Blog Post</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.updates %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;
+</description>
+            <link>https://leejmorel.github.io/blog/categories/blogpost/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Code Environment</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.code-environment %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>https://leejmorel.github.io/blog/categories/code-environment/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Updates</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.updates %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>https://leejmorel.github.io/blog/categories/updates/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+
+  </channel>
+</rss>
