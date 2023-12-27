@@ -1,0 +1,23 @@
+image: node:16
+
+pages:
+  stage: deploy
+  cache:
+    paths:
+      - node_modules
+  script:
+    - echo "Building..."
+    - npm ci
+    - npm run build
+    - echo "Deploying..."
+    - rm -rf public
+    - cp dist/index.html dist/404.html
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  tags:
+    - Pages
+  only:
+    - main
+

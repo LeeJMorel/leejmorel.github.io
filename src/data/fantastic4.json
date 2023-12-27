@@ -1,0 +1,108 @@
+{
+  "nodes": [
+    {
+      "label": "Skills",
+      "x": -104,
+      "y": 44,
+      "id": "0",
+      "color": "rgb(100,100,100)",
+      "size": 50
+    },
+    {
+      "label": "NLP",
+      "x": -221,
+      "y": 96,
+      "id": "1",
+      "color": "rgb(220,227,228)",
+      "size": 10
+    },
+    {
+      "label": "C#/Java",
+      "x": -100,
+      "y": 130,
+      "id": "2",
+      "color": "rgb(224,232,234)",
+      "size": 20
+    },
+    {
+      "label": "Python",
+      "x": 3,
+      "y": -159,
+      "id": "3",
+      "color": "rgb(219,226,228)",
+      "size": 14
+    },
+    {
+      "label": "Data Science",
+      "x": -74,
+      "y": -40,
+      "id": "4",
+      "color": "rgb(216,221,222)",
+      "size": 16
+    },
+    {
+      "label": "React/Node.JS",
+      "x": -72,
+      "y": -127,
+      "id": "5",
+      "color": "rgb(219,226,227)",
+      "size": 14
+    },
+    {
+      "label": "Projects",
+      "x": -3,
+      "y": -12,
+      "id": "10",
+      "color": "rgb(103,103,103)",
+      "size": 49
+    },
+    {
+      "label": "PathKit",
+      "x": 205,
+      "y": 100,
+      "id": "11",
+      "color": "rgb(237,248,251)",
+      "size": 5
+    },
+    {
+      "label": "MarvelVerse",
+      "x": 33,
+      "y": 130,
+      "id": "12",
+      "color": "rgb(227,235,237)",
+      "size": 10
+    },
+    {
+      "label": "Experience",
+      "x": 58,
+      "y": 73,
+      "id": "20",
+      "color": "rgb(112,112,112)",
+      "size": 47
+    },
+    {
+      "label": "Undergraduate Research",
+      "x": 130,
+      "y": -71,
+      "id": "21",
+      "color": "rgb(216,221,223)",
+      "size": 16
+    },
+    {
+      "label": "Classes",
+      "x": 158,
+      "y": 17,
+      "id": "30",
+      "color": "rgb(105,105,105)",
+      "size": 48
+    }
+  ],
+  "edges": [
+    {
+      "source": "0",
+      "target": "3",
+      "id": "40",
+      "color": "rgb(106,106,106)"
+    }
+  ]
+}
