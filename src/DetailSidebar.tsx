@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import "./App.scss";
-import * as Images from "./assets/profiles/ProfilePhoto";
+import defaultImage from "./assets/default.png";
 
 interface DetailSidebarPropsWithCallback {
   selected?: string;
@@ -41,7 +41,7 @@ const DetailSidebar: React.FC<DetailSidebarPropsWithCallback> = ({
         </div>
         <CardHeader title={selected} subheader={`Stuff`} />
         <div className="image-container">
-          <img src={Images.DEFAULT} alt={`Profile Picture for ${selected}`} />
+          <img src={defaultImage} alt={`Profile Picture for ${selected}`} />
         </div>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
