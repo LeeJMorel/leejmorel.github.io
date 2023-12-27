@@ -2,7 +2,7 @@
 import React, { useState, useMemo } from "react";
 import "./App.scss";
 import { FilterOption } from "./types";
-import FF from "../src/data/fantastic4.json";
+import FF from "../src/data/resumeNetwork.json";
 import "@react-sigma/core/lib/react-sigma.min.css";
 import { SigmaGraphViewer } from "./SigmaGraphViewer";
 import FilterDetail from "./FilterDetail";
