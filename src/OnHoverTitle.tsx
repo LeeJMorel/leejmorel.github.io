@@ -7,7 +7,7 @@ interface OnHoverTitleProps {
 const OnHoverTitle: React.FC<OnHoverTitleProps> = ({ label }) => {
   const message = label
     ? `You're looking at the connections with ${label}. Double click to learn more.`
-    : "Hover over a character to learn more";
+    : "Hover over the things I've learned or worked on to learn more";
 
   return (
     <div className="title-bar">

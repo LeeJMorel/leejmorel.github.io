@@ -1,29 +1,21 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState, useMemo } from "react";
+import { useState } from "react";
 import "./App.scss";
-import { FilterOption } from "./types";
-import FF from "../src/data/resumeNetwork.json";
+import Resume from "../src/data/resumeNetwork.json";
 import "@react-sigma/core/lib/react-sigma.min.css";
 import { SigmaGraphViewer } from "./SigmaGraphViewer";
-import FilterDetail from "./FilterDetail";
+import Sidebar from "./Sidebar";
 import OnHoverTitle from "./OnHoverTitle";
 import DetailSidebar from "./DetailSidebar";
 
-const graphDataMap = {
-  "Fantastic Four": FF,
-};
-interface NetworkProps {
-  filter: FilterOption;
-}
-
-const Network: React.FC<NetworkProps> = ({ filter }) => {
+const Network = () => {
   const [showDetailSidebar, setDetailSidebar] = useState(false);
   const [detailSidebarData, setDetailSidebarData] = useState<string | null>(
     null
   );
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
 
-  const graphData = useMemo(() => graphDataMap[filter.label], [filter.label]);
+  const graphData = Resume;
 
   const handleNodeClick = (label: string): void => {
     if (label !== null && (!detailSidebarData || detailSidebarData !== label)) {
@@ -47,7 +39,7 @@ const Network: React.FC<NetworkProps> = ({ filter }) => {
 
   return (
     <div className="app-body network-container">
-      {!showDetailSidebar && <FilterDetail filter={filter} />}
+      {!showDetailSidebar && <Sidebar />}
 
       {showDetailSidebar && detailSidebarData && (
         <DetailSidebar

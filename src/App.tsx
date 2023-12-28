@@ -43,6 +43,7 @@ function App() {
     window.open("https://www.linkedin.com/in/leejmorel", "_blank");
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentFilter, setCurrentFilter] =
     useState<FilterOption>(defaultFilter);
 
@@ -81,7 +82,7 @@ function App() {
       <div className="app-container">
         <div className="app-body">
           {window.innerWidth > 768 || window.innerHeight < window.innerWidth ? (
-            <Network filter={currentFilter} />
+            <Network />
           ) : (
             <p>View only enabled in landscape mode.</p>
           )}

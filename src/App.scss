@@ -77,12 +77,6 @@ $marvel-red-button: darken($marvel-red-primary, 10%);
     display: flex;
     flex-direction: column;
 
-    .graph-container {
-      padding: 20px;
-      margin-bottom: 20px;
-      flex: 1;
-    }
-
     .network-container {
       padding-right: 20px;
       flex: 1;
@@ -177,24 +171,6 @@ $marvel-red-button: darken($marvel-red-primary, 10%);
           align-items: center;
           font-family: "Oswald", sans-serif;
         }
-      }
-    }
-
-    .writeup {
-      padding: 20px;
-      margin: 20px 0;
-      flex: 1;
-      overflow: auto;
-      justify-content: center;
-      align-items: center;
-      background-color: #242424;
-
-      h3,
-      h4,
-      h5,
-      h6,
-      p {
-        text-align: left;
       }
     }
   }
