@@ -22,7 +22,6 @@
     "@mui/icons-material": "^5.14.14",
     "@mui/material": "^5.14.15",
     "@react-sigma/core": "^3.4.2",
-    "@react-sigma/layout-forceatlas2": "^3.4.2",
     "gh-pages": "^6.1.0",
     "graphology": "^0.25.4",
     "graphology-types": "^0.24.7",

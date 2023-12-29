@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.scss";
 import Network from "./Network";
-import Filters from "./Filters";
-import { FilterOption, defaultFilter, filterOptions } from "./types";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,33 +41,27 @@ function App() {
     window.open("https://www.linkedin.com/in/leejmorel", "_blank");
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [currentFilter, setCurrentFilter] =
-    useState<FilterOption>(defaultFilter);
-
-  const handleFilterChange = (filter: FilterOption) => {
-    setCurrentFilter(filter);
-  };
-
   return (
     <>
       <header className="app-header">
         <button onClick={openLinkedInPage}>View LinkedIn</button>
         <h1 className="title">Lee Janzen-Morel</h1>
-        <button>Download CV</button>
+        <a href="./assets/LeeJMorelResume.pdf" download="LeeJMorelResume.pdf">
+          <button>Download CV</button>
+        </a>
       </header>
 
       <aside className={`mobile-menu ${isMobile ? "isVisible" : ""}`}>
         <div className="mobile-menu-content" ref={menuContentRef}>
           <div className="mobile-menu-content.row">
             <button onClick={openLinkedInPage}>View LinkedIn</button>
-            <button>Download CV</button>
+            <a
+              href="./assets/LeeJMorelResume.pdf"
+              download="LeeJMorelResume.pdf"
+            >
+              <button>Download CV</button>
+            </a>
           </div>
-          <Filters
-            filterOptions={filterOptions}
-            onFilterChange={handleFilterChange}
-            isMobile={true}
-          />
         </div>
         <button
           className="mobile-menu-button"
