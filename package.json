@@ -1,9 +1,9 @@
 {
-  "name": "marvelverse",
+  "name": "LeeJMorel",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://leejmorel.github.io/MarvelVerse/",
+  "homepage": "https://leejmorel.github.io",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

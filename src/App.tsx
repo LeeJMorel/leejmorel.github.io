@@ -88,16 +88,6 @@ function App() {
           )}
         </div>
       </div>
-
-      <footer className="app-footer">
-        <div className="filter-container">
-          <Filters
-            filterOptions={filterOptions}
-            onFilterChange={handleFilterChange}
-            isMobile={false}
-          />
-        </div>
-      </footer>
     </>
   );
 }
