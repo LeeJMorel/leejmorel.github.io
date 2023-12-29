@@ -158,7 +158,7 @@ export const sidebarBodyMap = {
   "Undergraduate Research": {
     title: "Undergraduate Research",
     type: Category.Experience,
-    description: "stuff",
+    description: "I wrote a paper",
     link: "www.google.com",
   },
   Classes: {
