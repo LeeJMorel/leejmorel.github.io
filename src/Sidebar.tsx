@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardMedia } from "@mui/material";
 import "./App.scss";
+import leeImage from "./assets/lee.jpg";
 
 const Sidebar = () => {
   return (
@@ -15,7 +16,7 @@ const Sidebar = () => {
         <CardMedia
           component="img"
           height="190"
-          image="/src/assets/lee.jpg"
+          image={leeImage}
           alt="Lee wearing a beanie."
         />
         <CardContent>
