@@ -36,6 +36,7 @@ export interface GraphData {
 }
 
 export interface SidebarItem {
+  type: string;
   description: string;
   link?: string;
   photo?: string;
@@ -43,22 +44,26 @@ export interface SidebarItem {
 
 export const sidebarBodyMap = {
   Skills: {
-    description: "oksavso.",
+    type: "Category",
+    description: "This catagory shows technical and interpersonal skillsets I have acquired through academic pursuits, personal projects, and professional experiences, showcasing adaptability and versatility.",
   },
   Python: {
-    description: "Moansd.",
+    type: "Skill",
+    description: "I have used Python primarily in my undergraduate research on Natural Language Processing (NLP), as well as statistical analysis and simplistic AI Algorithms to further my practice and understanding in this complex field.",
     link: "https://www.python.org/",
+    photo: "Python"
   },
   AI: {
-    description: "kAFNL;.",
+    description: "I have a broad exploration into the realm of Artificial Intelligence, encompassing machine learning, neural networks, and intelligent system design.",
   },
   NLP: {
-    description: "neato.",
+    description: "Focus on Natural Language Processing, involving the interaction between computers and human languages. Explored techniques for text analysis and language understanding. THis was the focus of my Undergraduate Reasearch and presentation of my paper at AAAI.",
   },
   SQLite: {
     description:
-      "While I have worked with many different SQL based databases, SQLite is one I have used many times now due to it's strength in corss-platform development. I took classes which taught me how to navigate the complexities of a large database, as well as how to work with cloud systems such as Azure.",
+      "I have extensive experience with SQLite, a powerful and lightweight cross-platform relational database management system. Proficient in designing and querying databases. I took classes which taught me how to navigate the complexities of a large database, as well as how to work with cloud systems such as Azure.",
     link: "https://www.sqlite.org/index.html",
+    photo: "SQLite"
   },
   "Data Science": {
     description:

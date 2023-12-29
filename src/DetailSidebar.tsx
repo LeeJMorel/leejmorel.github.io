@@ -5,12 +5,12 @@ import {
   CardHeader,
   IconButton,
   Typography,
-  CardActions,
   Link,
+  CardMedia,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import "./App.scss";
-import defaultImage from "./assets/default.png";
+import * as Images from "./assets/resume/DetailPhoto";
 import { sidebarBodyMap } from "./types";
 
 interface DetailSidebarPropsWithCallback {
@@ -55,17 +55,19 @@ const DetailSidebar: React.FC<DetailSidebarPropsWithCallback> = ({
             )
           }
         />
-        <div className="image-container">
-          <img src={defaultImage} alt={`Profile Picture for ${selected}`} />
-        </div>
+        {selectedItem.photo && (
+          <CardMedia
+            component="img"
+            height="190"
+            image={Images[selectedItem.photo]}
+            alt={`Profile Picture for ${selected}`}
+          />
+        )}
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             {selectedItem.description}
           </Typography>
         </CardContent>
-        <CardActions>
-          <div className="actions"></div>
-        </CardActions>
       </Card>
     </div>
   );
