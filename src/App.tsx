@@ -47,7 +47,7 @@ function App() {
   };
 
   const downloadPdf = () => {
-    const pdfPath = "/public/LeeJMorelResume.pdf";
+    const pdfPath = "/LeeJMorelResume.pdf";
 
     // Create a hidden anchor tag
     const anchor = document.createElement("a");
@@ -94,7 +94,7 @@ function App() {
       </header>
       {showExpandedHeader && (
         <div className="app-header">
-          <CategoryToggle categories={categories} onCategorySelect={handleCategorySelect} />
+          <CategoryToggle categories={categories} onCategorySelect={handleCategorySelect} isMobile={false} />
         </div>
       )}
 
@@ -111,6 +111,7 @@ function App() {
               <AiOutlineMail />
             </IconButton>
           </div>
+          <CategoryToggle categories={categories} onCategorySelect={handleCategorySelect} isMobile={true} />
         </div>
         <button
           className="mobile-menu-button"
