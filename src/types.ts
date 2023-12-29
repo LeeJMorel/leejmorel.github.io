@@ -99,7 +99,7 @@ export const sidebarBodyMap = {
       "A program that encodes and decodes Morse code files using a binary tree. Morse code is a system that encodes the 26 English letters and 10 numeric digits into sequences of dots, dashes, and spaces. The tree stores the encodings of each letter and number, going left for a dot and right for a dash. The program is designed to translate both directions, inverting the tree",
     link: "https://github.com/LeeJMorel/Morse-Code-Translator",
   },
-  "Undergradute Research": {
+  "Undergraduate Research": {
     description: "stuff",
     link: "www.google.com",
   },

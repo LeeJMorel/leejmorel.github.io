@@ -31,8 +31,6 @@ const Network = () => {
 
   const handleHoverNode = (label: string | null): void => {
     if (label !== null && hoveredNode !== label) {
-      console.log("hovered node: " + hoveredNode);
-      console.log("label: " + label);
       setHoveredNode(label);
     }
   };
