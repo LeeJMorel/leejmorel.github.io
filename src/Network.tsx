@@ -36,7 +36,7 @@ const Network = () => {
   };
 
   return (
-    <div className="app-body network-container">
+    <div className="app-body content-container">
       {!showDetailSidebar && <Sidebar />}
 
       {showDetailSidebar && detailSidebarData && (

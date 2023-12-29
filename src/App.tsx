@@ -3,6 +3,9 @@ import "./App.scss";
 import Network from "./Network";
 import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { Button, IconButton } from "@mui/material";
+import { Category, categories } from "./types";
+import CategoryToggle from "./CategoryToggle";
+import ContentGrid from "./ContentGrid";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,6 +64,12 @@ function App() {
     (window.location.href = "mailto:ljanzen@cs.washington.edu");
 
   const [showExpandedHeader, setShowExpandedHeader] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<Category>(Category.ShowNetwork);
+
+  const handleCategorySelect = (category: Category) => {
+    setSelectedCategory(category);
+  };
+  
   const openMenu = () => {
     // Toggle the visibility of the expanded header
     setShowExpandedHeader(!showExpandedHeader);
@@ -85,19 +94,7 @@ function App() {
       </header>
       {showExpandedHeader && (
         <div className="app-header">
-          {/* Add buttons for key parts of the resume */}
-          <Button
-            onClick={() => console.log("View Education")}
-            variant="outlined"
-          >
-            View Education
-          </Button>
-          <Button
-            onClick={() => console.log("View Experience")}
-            variant="outlined"
-          >
-            View Experience
-          </Button>
+          <CategoryToggle categories={categories} onCategorySelect={handleCategorySelect} />
         </div>
       )}
 
@@ -125,11 +122,16 @@ function App() {
 
       <div className="app-container">
         <div className="app-body">
-          {window.innerWidth > 768 || window.innerHeight < window.innerWidth ? (
-            <Network />
-          ) : (
-            <p>View only enabled in landscape mode.</p>
+          {selectedCategory === Category.ShowNetwork && (
+            <>
+              {window.innerWidth > 768 || window.innerHeight < window.innerWidth ? (
+                <Network />
+              ) : (
+                <p>View only enabled in landscape mode.</p>
+              )}
+            </>
           )}
+          {selectedCategory !== Category.ShowNetwork && <ContentGrid type={selectedCategory} />}
         </div>
       </div>
     </>
