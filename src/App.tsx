@@ -16,8 +16,6 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const menuContentRef = useRef<HTMLDivElement | null>(null);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
   useEffect(() => {
@@ -29,9 +27,7 @@ function App() {
       //await loadFull(engine);
       await loadSlim(engine);
       //await loadBasic(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    }).then(() => {});
   }, []);
 
   //this checks if we are in mobile
