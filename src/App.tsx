@@ -10,11 +10,17 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import Resume from "./data/resumeNetwork.json";
-import NodeGraph from "./components/NodeCluster";
+import { CircularPacking } from "./components/CircularPacking";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenDimensions, setScreenDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= 768 || window.innerHeight <= 500
+  );
   const menuContentRef = useRef<HTMLDivElement | null>(null);
 
   // this should be run only once per application lifetime
@@ -33,7 +39,15 @@ function App() {
   //this checks if we are in mobile
   useEffect(() => {
     function handleResize() {
-      setIsMobile(window.innerWidth <= 768 || window.innerHeight <= 500);
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+
+      setScreenDimensions({
+        width: newWidth,
+        height: newHeight,
+      });
+
+      setIsMobile(newWidth <= 768 || newHeight <= 500);
     }
 
     window.addEventListener("resize", handleResize);
@@ -283,14 +297,11 @@ function App() {
               {!isMobile ? (
                 <Network />
               ) : (
-                <>
-                  <NodeGraph nodes={graphData.nodes} />
-                  <Particles
-                    id="tsparticles"
-                    particlesLoaded={particlesLoaded}
-                    options={options}
-                  />
-                </>
+                <CircularPacking
+                  data={graphData.nodes}
+                  width={screenDimensions.width}
+                  height={screenDimensions.height}
+                />
               )}
               <Particles
                 id="tsparticles"
