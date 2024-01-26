@@ -1,6 +1,6 @@
 # Lee's Portfolio Website
 
-Welcome to my personal portfolio website! This site serves as a showcase of my skills, projects, and experiences as a [Your Profession/Title], providing visitors with an insight into my journey and expertise.
+Welcome to my personal portfolio website! This site serves as a showcase of my skills, projects, and experiences as a Full-Stack Software Engineer, providing visitors with an insight into my journey and expertise.
 
 ## Features
 

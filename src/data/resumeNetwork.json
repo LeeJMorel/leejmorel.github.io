@@ -75,6 +75,24 @@
     },
     {
       "attributes": {},
+      "label": "Soft Skills",
+      "x": -30,
+      "y": 50,
+      "id": "8",
+      "color": "rgb( 0, 153, 255)",
+      "size": 40
+    },
+    {
+      "attributes": {},
+      "label": "Agile/Kanban",
+      "x": -50,
+      "y": -20,
+      "id": "9",
+      "color": "rgb( 0, 153, 255)",
+      "size": 15
+    },
+    {
+      "attributes": {},
       "label": "Projects",
       "x": -3,
       "y": -12,
@@ -135,6 +153,15 @@
       "id": "1001",
       "color": "rgb(255, 153, 0)",
       "size": 16
+    },
+    {
+      "attributes": {},
+      "label": "UW Computer Science B.S. (June 2024)",
+      "x": 103,
+      "y": 60,
+      "id": "1002",
+      "color": "rgb(255, 153, 0)",
+      "size": 25
     },
     {
       "attributes": {},
@@ -929,6 +956,166 @@
       "target": "10007",
       "id": "100089",
       "color": "rgb(105,105,105)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "1000",
+      "target": "1002",
+      "id": "100090",
+      "color": "rgb(255, 153, 0)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "1002",
+      "target": "1000",
+      "id": "100091",
+      "color": "rgb(255, 153, 0)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "10000",
+      "target": "1002",
+      "id": "100092",
+      "color": "rgb(255, 153, 0)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "1002",
+      "target": "0",
+      "id": "100093",
+      "color": "rgb(255, 153, 0)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "0",
+      "target": "8",
+      "id": "100094",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "8",
+      "target": "0",
+      "id": "100095",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "101",
+      "target": "8",
+      "id": "100096",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "8",
+      "target": "101",
+      "id": "100097",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "102",
+      "target": "8",
+      "id": "100098",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "8",
+      "target": "102",
+      "id": "100099",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "103",
+      "target": "8",
+      "id": "100100",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "8",
+      "target": "103",
+      "id": "100101",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "1001",
+      "target": "8",
+      "id": "100102",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "8",
+      "target": "1001",
+      "id": "100103",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "101",
+      "target": "9",
+      "id": "100104",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "9",
+      "target": "101",
+      "id": "100105",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "0",
+      "target": "9",
+      "id": "100106",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "9",
+      "target": "0",
+      "id": "100107",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "10005",
+      "target": "9",
+      "id": "100108",
+      "color": "rgb( 0, 153, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "9",
+      "target": "10005",
+      "id": "100109",
+      "color": "rgb( 0, 153, 255)"
     }
   ]
 }

@@ -101,6 +101,19 @@ export const sidebarBodyMap = {
       "While most of my projects are built using React due to its popularity, I am familiar with many JavaScript and Node.js-based tools such as Vue and Angular as well.",
     link: "https://react.dev/",
   },
+  "Soft Skills": {
+    title: "Soft Skills",
+    type: Category.Skills,
+    description:
+      "Soft skills encompass essential interpersonal qualities that elevate communication, teamwork, and overall work proficiency. Possessing customer-focused communication, effective presentation abilities, and empathetic interpersonal skills, I bring a strategic approach to projects. My collaborative spirit, combined with self-motivation, efficient time management, creativity, and analytical thinking, reflects in successful project outcomes. Rooted in prior general management experience, these skills contribute to a holistic proficiency, ensuring adept navigation of both business and technological landscapes.",
+  },
+  "Agile/Kanban": {
+    title: "Agile/Kanban",
+    type: Category.Skills,
+    description:
+      "Proficient in Agile and Kanban methodologies, I applied these dynamic project management frameworks to lead the development of the PathKit project. Serving as a project manager, I effectively utilized Agile's iterative processes and Kanban's visual tools to enhance team collaboration, track progress, and ensure timely project delivery. Implementing best practices, I navigated challenges, maintained project schedules, and fostered an environment of efficiency and adaptability. My expertise in Agile and Kanban reflects my commitment to streamlined project management, facilitating the successful realization of project goals.",
+    link: "https://asana.com/resources/what-is-kanban",
+  },
   Projects: {
     title: "Projects",
     description:
@@ -139,6 +152,13 @@ export const sidebarBodyMap = {
     title: "Experience",
     description:
       "Prior to my time as a student I had a successful business career, where I became a General Manager. I left this field in hopes to explore my passions deeper; however, I bring with me experience from my previous career. I excel working with teams, communications, and my time management capabilities have been the reason for the success of my many personal projects.",
+  },
+  "UW Computer Science B.S. (June 2024)": {
+    title: "UW Computer Science B.S. (June 2024)",
+    type: Category.Experience,
+    description:
+      "Earning a four-year bachelor's degree from the University of Washington, specifically from the Paul G. Allen School of Computer Science & Engineering, is a prestigious and enriching academic journey. The Paul G. Allen School is consistently recognized as one of the top computer science and engineering schools globally, maintaining a high-ranking status. The program offers a comprehensive curriculum that covers a broad spectrum of topics, ranging from fundamental computer science principles to advanced specialized areas. Throughout the degree, I have engaged in rigorous coursework, hands-on projects, and research opportunities, providing me with a well-rounded and practical understanding of the field.",
+    link: "https://www.cs.washington.edu/academics/ugrad",
   },
   "Undergraduate Research": {
     title: "Undergraduate Research",
