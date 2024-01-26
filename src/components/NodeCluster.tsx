@@ -91,7 +91,7 @@ const NodeGraph: React.FC<NodeGraphProps> = ({ nodes }) => {
                 transform: "translate(-50%, -50%)",
                 cursor: "pointer",
               }}
-              onClick={() => handleNodeClick(node.id)}
+              onClick={() => handleNodeClick(node.label)}
             >
               <div
                 style={{

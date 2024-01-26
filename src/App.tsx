@@ -292,6 +292,11 @@ function App() {
                   />
                 </>
               )}
+              <Particles
+                id="tsparticles"
+                particlesLoaded={particlesLoaded}
+                options={options}
+              />
             </>
           )}
           {selectedCategory !== Category.ShowNetwork && (

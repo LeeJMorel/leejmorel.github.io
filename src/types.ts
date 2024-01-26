@@ -147,7 +147,7 @@ export const sidebarBodyMap = {
       "Programming in Python and Jupyter Notebook for statistically relevant data analysis and visualization. Reading and summarizing other potentially relevant research papers. Prompt generation for LLMs such as ChatGPT and Llama 2 for exploratory research. Successfully co-authored and published a workshop paper to be orally presented April 2024 for the AAAI conference.",
     link: "https://aaai.org/aaai-conference/",
   },
-  "UW Computer Science B.S.": {
+  "UW Computer Science B.S. (June 2024)": {
     title: "UW Computer Science B.S.",
     type: Category.Experience,
     description:

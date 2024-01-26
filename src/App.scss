@@ -77,29 +77,29 @@ $green-button: darken($green-primary, 10%);
       flex: 1;
       flex-direction: row;
       overflow: hidden;
+      z-index: 100;
 
-      .grid-container{
+      .grid-container {
         padding: 20px;
         display: flex;
         justify-content: space-evenly;
 
-      .image-container {
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .image-container {
+          padding: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-        img {
-          max-width: 100%;
-          max-height: 100px;
-          object-fit: contain;
+          img {
+            max-width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+          }
         }
       }
-    }
 
       .social-container {
         width: 30%;
-        background-color: #242424;
         padding: 20px;
         max-width: fit-content;
 
