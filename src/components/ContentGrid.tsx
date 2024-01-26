@@ -1,16 +1,18 @@
-import React from 'react';
-import { Grid, Paper, Typography } from '@mui/material';
-import { SidebarItem, sidebarBodyMap, Category } from './types';
-import * as Images from "./assets/resume/DetailPhoto";
+import React from "react";
+import { Grid, Paper, Typography } from "@mui/material";
+import { SidebarItem, sidebarBodyMap, Category } from "../types";
+import * as Images from "../assets/resume/DetailPhoto";
 
 interface ContentGridProps {
   type: Category;
 }
 
 const ContentGrid: React.FC<ContentGridProps> = ({ type }) => {
-  const itemsOfType: SidebarItem[] = Object.values(sidebarBodyMap).filter((item) => {
-    return 'type' in item && item.type === type;
-  });
+  const itemsOfType: SidebarItem[] = Object.values(sidebarBodyMap).filter(
+    (item) => {
+      return "type" in item && item.type === type;
+    }
+  );
 
   return (
     <div className="app-body content-container">
@@ -22,7 +24,10 @@ const ContentGrid: React.FC<ContentGridProps> = ({ type }) => {
                 {/* Display photo if available */}
                 {item.photo && (
                   <div className="image-container">
-                    <img src={Images[item.photo]} alt={`Photo for ${item.title}`} />
+                    <img
+                      src={Images[item.photo]}
+                      alt={`Photo for ${item.title}`}
+                    />
                   </div>
                 )}
 

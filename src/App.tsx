@@ -1,16 +1,38 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.scss";
-import Network from "./Network";
+import Network from "./components/Network";
 import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { Button, IconButton } from "@mui/material";
 import { Category, categories } from "./types";
-import CategoryToggle from "./CategoryToggle";
-import ContentGrid from "./ContentGrid";
+import CategoryToggle from "./components/CategoryToggle";
+import ContentGrid from "./components/ContentGrid";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { type Container, type ISourceOptions } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
+import Resume from "./data/resumeNetwork.json";
+import NodeGraph from "./components/NodeCluster";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const menuContentRef = useRef<HTMLDivElement | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [init, setInit] = useState(false);
+
+  // this should be run only once per application lifetime
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      //await loadAll(engine);
+      //await loadFull(engine);
+      await loadSlim(engine);
+      //await loadBasic(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
 
   //this checks if we are in mobile
   useEffect(() => {
@@ -42,6 +64,132 @@ function App() {
     }
   }, [menuOpen]);
 
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log(container);
+  };
+
+  const options: ISourceOptions = useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "#242424",
+        },
+        image: "url('https://particles.js.org/images/background3.jpg')",
+        size: "cover",
+      },
+      backgroundMask: {
+        composite: "destination-out",
+        cover: {
+          color: {
+            value: {
+              r: 36,
+              g: 36,
+              b: 36,
+            },
+          },
+          opacity: 1,
+        },
+        enable: true,
+      },
+      clear: true,
+      fullScreen: {
+        enable: true,
+        zIndex: 0,
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: "push",
+          },
+          onHover: {
+            enable: true,
+            mode: "bubble",
+            parallax: {
+              enable: false,
+              force: 2,
+              smooth: 10,
+            },
+          },
+        },
+        resize: {
+          delay: 0.5,
+          enable: true,
+        },
+        modes: {
+          bubble: {
+            distance: 400,
+            size: 100,
+            duration: 2,
+            opacity: 1,
+            speed: 100,
+            mix: false,
+          },
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+            factor: 100,
+            speed: 1,
+            maxSpeed: 100,
+            easing: "ease-out-quad",
+          },
+          remove: {
+            quantity: 2,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#ffffff",
+        },
+        links: {
+          color: "#ffffff",
+          distance: 250,
+          enable: true,
+          opacity: 0.5,
+          width: 2,
+        },
+        move: {
+          enable: true,
+          random: false,
+          speed: 2,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+            width: 1920,
+            height: 1080,
+          },
+          limit: {
+            mode: "delete",
+            value: 0,
+          },
+          value: 80,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 20,
+            color: "#000000",
+          },
+        },
+        size: {
+          value: { min: 10, max: 30 },
+        },
+      },
+      detectRetina: true,
+    }),
+    []
+  );
+
   const openLinkedInPage = () => {
     window.open("https://www.linkedin.com/in/leejmorel", "_blank");
   };
@@ -64,16 +212,19 @@ function App() {
     (window.location.href = "mailto:ljanzen@cs.washington.edu");
 
   const [showExpandedHeader, setShowExpandedHeader] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<Category>(Category.ShowNetwork);
+  const [selectedCategory, setSelectedCategory] = useState<Category>(
+    Category.ShowNetwork
+  );
 
   const handleCategorySelect = (category: Category) => {
     setSelectedCategory(category);
   };
-  
+
   const openMenu = () => {
     // Toggle the visibility of the expanded header
     setShowExpandedHeader(!showExpandedHeader);
   };
+  const graphData = Resume;
 
   return (
     <>
@@ -94,7 +245,11 @@ function App() {
       </header>
       {showExpandedHeader && (
         <div className="app-header">
-          <CategoryToggle categories={categories} onCategorySelect={handleCategorySelect} isMobile={false} />
+          <CategoryToggle
+            categories={categories}
+            onCategorySelect={handleCategorySelect}
+            isMobile={false}
+          />
         </div>
       )}
 
@@ -111,7 +266,11 @@ function App() {
               <AiOutlineMail />
             </IconButton>
           </div>
-          <CategoryToggle categories={categories} onCategorySelect={handleCategorySelect} isMobile={true} />
+          <CategoryToggle
+            categories={categories}
+            onCategorySelect={handleCategorySelect}
+            isMobile={true}
+          />
         </div>
         <button
           className="mobile-menu-button"
@@ -125,14 +284,23 @@ function App() {
         <div className="app-body">
           {selectedCategory === Category.ShowNetwork && (
             <>
-              {window.innerWidth > 768 || window.innerHeight < window.innerWidth ? (
+              {!isMobile ? (
                 <Network />
               ) : (
-                <p>View only enabled in landscape mode.</p>
+                <>
+                  <NodeGraph nodes={graphData.nodes} />
+                  <Particles
+                    id="tsparticles"
+                    particlesLoaded={particlesLoaded}
+                    options={options}
+                  />
+                </>
               )}
             </>
           )}
-          {selectedCategory !== Category.ShowNetwork && <ContentGrid type={selectedCategory} />}
+          {selectedCategory !== Category.ShowNetwork && (
+            <ContentGrid type={selectedCategory} />
+          )}
         </div>
       </div>
     </>

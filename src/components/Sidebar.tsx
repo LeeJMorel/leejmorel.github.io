@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardMedia } from "@mui/material";
-import "./App.scss";
+import "../App.scss";
 
 const Sidebar = () => {
   return (

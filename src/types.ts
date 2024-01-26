@@ -24,11 +24,11 @@ export interface GraphData {
 }
 
 export enum Category {
-  ShowNetwork = 'Show Network',
-  Skills = 'Skills',
-  Projects = 'Projects',
-  Experience = 'Experience',
-  Classes = 'Classes',
+  ShowNetwork = "Show Network",
+  Skills = "Skills",
+  Projects = "Projects",
+  Experience = "Experience",
+  Classes = "Classes",
 }
 
 export const categories: Category[] = [
@@ -40,7 +40,7 @@ export const categories: Category[] = [
 ];
 
 export interface SidebarItem {
-  title: string,
+  title: string;
   type?: Category;
   description: string;
   link?: string;
@@ -50,24 +50,28 @@ export interface SidebarItem {
 export const sidebarBodyMap = {
   Skills: {
     title: "Skills",
-    description: "This category shows technical and interpersonal skillsets I have acquired through academic pursuits, personal projects, and professional experiences, showcasing adaptability and versatility.",
+    description:
+      "This category shows technical and interpersonal skillsets I have acquired through academic pursuits, personal projects, and professional experiences, showcasing adaptability and versatility.",
   },
   Python: {
     title: "Python",
     type: Category.Skills,
-    description: "I have used Python primarily in my undergraduate research on Natural Language Processing (NLP), as well as statistical analysis and simplistic AI Algorithms to further my practice and understanding in this complex field.",
+    description:
+      "I have used Python primarily in my undergraduate research on Natural Language Processing (NLP), as well as statistical analysis and simplistic AI Algorithms to further my practice and understanding in this complex field.",
     link: "https://www.python.org/",
-    photo: "Python"
+    photo: "Python",
   },
   AI: {
     title: "Artificial Intelligence",
     type: Category.Skills,
-    description: "I have a broad exploration into the realm of Artificial Intelligence, encompassing machine learning, neural networks, and intelligent system design.",
+    description:
+      "I have a broad exploration into the realm of Artificial Intelligence, encompassing machine learning, neural networks, and intelligent system design.",
   },
   NLP: {
     title: "Natural Language Processing (NLP)",
     type: Category.Skills,
-    description: "Focus on Natural Language Processing, involving the interaction between computers and human languages. Explored techniques for text analysis and language understanding. This was the focus of my Undergraduate Research and presentation of my paper at AAAI.",
+    description:
+      "Focus on Natural Language Processing, involving the interaction between computers and human languages. Explored techniques for text analysis and language understanding. This was the focus of my Undergraduate Research and presentation of my paper at AAAI.",
   },
   SQLite: {
     title: "SQLite",
@@ -75,7 +79,7 @@ export const sidebarBodyMap = {
     description:
       "I have extensive experience with SQLite, a powerful and lightweight cross-platform relational database management system. Proficient in designing and querying databases. I took classes which taught me how to navigate the complexities of a large database, as well as how to work with cloud systems such as Azure.",
     link: "https://www.sqlite.org/index.html",
-    photo: "SQLite"
+    photo: "SQLite",
   },
   "Data Science": {
     title: "Data Science",
@@ -139,8 +143,9 @@ export const sidebarBodyMap = {
   "Undergraduate Research": {
     title: "Undergraduate Research",
     type: Category.Experience,
-    description: "stuff",
-    link: "www.google.com",
+    description:
+      "Programming in Python and Jupyter Notebook for statistically relevant data analysis and visualization. Reading and summarizing other potentially relevant research papers. Prompt generation for LLMs such as ChatGPT and Llama 2 for exploratory research. Successfully co-authored and published a workshop paper to be orally presented April 2024 for the AAAI conference.",
+    link: "https://aaai.org/aaai-conference/",
   },
   Classes: {
     title: "Classes",

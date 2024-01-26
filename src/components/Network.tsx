@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
-import "./App.scss";
-import Resume from "../src/data/resumeNetwork.json";
+import "../App.scss";
+import Resume from "../data/resumeNetwork.json";
 import "@react-sigma/core/lib/react-sigma.min.css";
 import { SigmaGraphViewer } from "./SigmaGraphViewer";
 import Sidebar from "./Sidebar";

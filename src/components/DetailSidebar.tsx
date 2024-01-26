@@ -9,9 +9,9 @@ import {
   CardMedia,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import "./App.scss";
-import * as Images from "./assets/resume/DetailPhoto";
-import { sidebarBodyMap } from "./types";
+import "../App.scss";
+import * as Images from "../assets/resume/DetailPhoto";
+import { sidebarBodyMap } from "../types";
 
 interface DetailSidebarPropsWithCallback {
   selected?: string;
@@ -48,7 +48,11 @@ const DetailSidebar: React.FC<DetailSidebarPropsWithCallback> = ({
           subheader={
             selectedItem.link && (
               <Typography variant="body2" color="text.primary">
-                <Link href={selectedItem.link} target="_blank" rel="noopener noreferrer">
+                <Link
+                  href={selectedItem.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   More info
                 </Link>
               </Typography>

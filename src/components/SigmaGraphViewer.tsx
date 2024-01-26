@@ -18,9 +18,9 @@ import {
 } from "react-icons/ai";
 import { MdFilterCenterFocus } from "react-icons/md";
 import { MultiDirectedGraph } from "graphology";
-import "./App.scss";
+import "../App.scss";
 import { Attributes } from "graphology-types";
-import { GraphData } from "./types";
+import { GraphData } from "../types";
 import DragNdrop from "./DragNdrop";
 
 interface SigmaGraphViewerProps {
