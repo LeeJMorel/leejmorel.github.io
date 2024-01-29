@@ -1,8 +1,11 @@
-import React, { useState } from "react";
 import * as d3 from "d3";
+import { useEffect, useRef } from "react";
+import { makeCircles } from "./makeCircles";
+import { scaleSqrt, extent } from "d3";
 import { Node as NodeType } from "../types";
-import CloseIcon from "@mui/icons-material/Close";
-import { IconButton } from "@mui/material";
+
+const BUBBLE_MIN_SIZE = 1;
+const BUBBLE_MAX_SIZE = 50;
 
 type CircularPackingProps = {
   width: number;
@@ -10,82 +13,66 @@ type CircularPackingProps = {
   data: NodeType[];
 };
 
-export const CircularPacking = ({
-  width,
-  height,
-  data,
-}: CircularPackingProps) => {
-  const [selectedNode, setSelectedNode] = useState<NodeType | null>(null);
+const CircularPacking = ({ width, height, data }: CircularPackingProps) => {
+  // The force simulation mutates nodes, so create a copy first
+  // Node positions are initialized by d3
+  const nodes: NodeType[] = data.map((d) => ({
+    ...d,
+    x: Math.random() * width,
+    y: Math.random() * height,
+  }));
 
-  // Transform your graphData to D3's hierarchy structure
-  const hierarchy = d3
-    .hierarchy({ children: data })
-    .sum((d) => d.size)
-    .sort((a, b) => b.value! - a.value!);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  const packGenerator = d3.pack<NodeType>().size([width, height]).padding(4);
-  const root = packGenerator(hierarchy);
+  const [min, max] = extent(nodes.map((d) => d.size)) as [number, number];
+  const sizeScale = scaleSqrt()
+    .domain([min, max])
+    .range([BUBBLE_MIN_SIZE, BUBBLE_MAX_SIZE]);
 
   const handleNodeClick = (node: NodeType) => {
-    setSelectedNode(node);
+    // Handle the click event for the node
+    console.log("Node clicked:", node.label);
   };
 
-  const handleCloseModal = () => {
-    setSelectedNode(null);
-  };
+  useEffect(() => {
+    // set dimension of the canvas element
+    const canvas = canvasRef.current;
+    const context = canvas?.getContext("2d");
+    if (!context) {
+      return;
+    }
+
+    // run d3-force to find the position of nodes on the canvas
+    d3.forceSimulation(nodes)
+
+      // list of forces we apply to get node positions
+      .force(
+        "collide",
+        d3.forceCollide().radius((node) => sizeScale(node.size) + 1)
+      )
+      .force("charge", d3.forceManyBody().strength(80))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("charge", d3.forceY(0).strength(0.01))
+
+      // at each iteration of the simulation, draw the network diagram with the new node positions
+      .on("tick", () => {
+        makeCircles(context, width, height, nodes, sizeScale, handleNodeClick);
+      });
+  }, [width, height, nodes, sizeScale]);
 
   return (
     <div className="app-body content-container">
-      <svg width={width} height={height} style={{ display: "inline-block" }}>
-        {root
-          .descendants()
-          .slice(1)
-          .map((node) => (
-            <circle
-              key={node.data.id}
-              cx={node.x}
-              cy={node.y}
-              r={node.r}
-              fill={node.data.color}
-              onClick={() => handleNodeClick(node.data)}
-              style={{ cursor: "pointer" }}
-            />
-          ))}
-        {root
-          .descendants()
-          .slice(1)
-          .map((node) => (
-            <text
-              key={node.data.id}
-              x={node.x}
-              y={node.y}
-              fontSize={13}
-              fontWeight={400}
-              textAnchor="middle"
-              alignmentBaseline="middle"
-            >
-              {node.data.label}
-            </text>
-          ))}
-      </svg>
-
-      {selectedNode !== null && (
-        <div
-          className="node-info-modal"
-          style={{ backgroundColor: selectedNode.color }}
-        >
-          <div className="icon">
-            <IconButton
-              aria-label="Close"
-              className="close-icon"
-              onClick={handleCloseModal}
-            >
-              <CloseIcon />
-            </IconButton>
-          </div>
-          <h2>{selectedNode.label}</h2>
-        </div>
-      )}
+      <canvas
+        ref={canvasRef}
+        style={{
+          width,
+          height,
+        }}
+        width={width}
+        height={height}
+      />
     </div>
   );
 };
+
+export default CircularPacking;

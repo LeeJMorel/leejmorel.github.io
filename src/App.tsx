@@ -10,7 +10,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import Resume from "./data/resumeNetwork.json";
-import { CircularPacking } from "./components/CircularPacking";
+import CircularPacking from "./components/CircularPacking";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -78,6 +78,7 @@ function App() {
     console.log(container);
   };
 
+  //background animation
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
