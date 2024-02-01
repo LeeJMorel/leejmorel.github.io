@@ -31,7 +31,6 @@ const CircularPacking = ({ width, height, data }: CircularPackingProps) => {
   const [selectedNode, setSelectedNode] = useState<NodeType | null>(null);
 
   const handleNodeClick = (node: NodeType) => {
-    console.log("Node clicked:", node.label);
     setSelectedNode(node);
   };
 

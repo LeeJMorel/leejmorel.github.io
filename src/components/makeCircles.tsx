@@ -15,8 +15,10 @@ export const makeCircles = (
   // Clear the canvas
   context.clearRect(0, 0, width, height);
 
-  // Add click event outside the loop
-  context.canvas.addEventListener("click", (event) => {
+  context.canvas.removeEventListener("click", handleCanvasClick);
+  context.canvas.addEventListener("click", handleCanvasClick);
+
+  function handleCanvasClick(event: MouseEvent) {
     const rect = context.canvas.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
@@ -34,7 +36,7 @@ export const makeCircles = (
         }
       }
     });
-  });
+  }
 
   // Draw the nodes
   nodes.forEach((node) => {
@@ -52,7 +54,7 @@ export const makeCircles = (
     context.fill();
 
     // Draw the label
-    const fontSize = 13; // Set your desired font size
+    const fontSize = 13;
     context.font = `${fontSize}px Lato, sans-serif`;
     context.fillStyle = "rgba(0, 0, 0, 0.75)";
     const textWidth = context.measureText(node.label).width;
