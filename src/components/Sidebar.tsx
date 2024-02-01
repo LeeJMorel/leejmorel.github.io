@@ -11,7 +11,7 @@ const Sidebar = () => {
         </div>
         <CardHeader
           title="Hello!"
-          subheader="Learn more details by double clicking."
+          subheader="Learn more details by clicking on what interests you."
         />
         <CardMedia
           component="img"
