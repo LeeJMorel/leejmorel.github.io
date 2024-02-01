@@ -14,11 +14,10 @@ type CircularPackingProps = {
 };
 
 const CircularPacking = ({ width, height, data }: CircularPackingProps) => {
-  // The force simulation mutates nodes, so create a copy first
-  // Node positions are initialized by d3
+  const margin = 70; // Add a margin to ensure nodes are not at the edge of the screen
   const nodes: NodeType[] = data.map((d) => ({
     ...d,
-    x: Math.random() * width,
+    x: Math.random() * (width - 2 * margin) + margin,
     y: Math.random() * height,
   }));
 
@@ -44,8 +43,6 @@ const CircularPacking = ({ width, height, data }: CircularPackingProps) => {
 
     // run d3-force to find the position of nodes on the canvas
     d3.forceSimulation(nodes)
-
-      // list of forces we apply to get node positions
       .force(
         "collide",
         d3.forceCollide().radius((node) => sizeScale(node.size) + 1)
@@ -53,8 +50,6 @@ const CircularPacking = ({ width, height, data }: CircularPackingProps) => {
       .force("charge", d3.forceManyBody().strength(80))
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force("charge", d3.forceY(0).strength(0.01))
-
-      // at each iteration of the simulation, draw the network diagram with the new node positions
       .on("tick", () => {
         makeCircles(context, width, height, nodes, sizeScale, handleNodeClick);
       });

@@ -88,24 +88,37 @@ export const sidebarBodyMap = {
       "A key focus throughout my major was exploring Big Data and Statistics.",
   },
   "C#/Java": {
-    title: "C#/Java",
+    title: "C#, Java, and C based languages",
     type: Category.Skills,
     description:
       "Java was the language I was taught my fundamentals in, and is as a result the language I have the most practice in. I have also developed many projects using C, Rust, and other related programming languages to build strong backend environments in a full-stack application.",
     link: "https://www.java.com/en/",
   },
   "React/Node.JS": {
-    title: "React/Node.JS",
+    title: "React, Node.JS, and javascript based languages",
     type: Category.Skills,
     description:
       "While most of my projects are built using React due to its popularity, I am familiar with many JavaScript and Node.js-based tools such as Vue and Angular as well.",
     link: "https://react.dev/",
+  },
+  "Soft Skills": {
+    title: "Soft Skills",
+    type: Category.Skills,
+    description:
+      "Possessing strong social communication skills, I am customer-focused and adept at delivering impactful presentations. My collaborative approach fosters effective teamwork, complemented by empathetic interpersonal skills. On a personal level, I am self-motivated and excel in efficient time management. My creativity, analytical thinking, and adaptability further contribute to a well-rounded skill set.",
   },
   Projects: {
     title: "Projects",
     description:
       "I explore new skills through projects both in and out of my classes. Projects made for classes are still built from scratch, and are proposed and built out by myself with the intent to explore particular themes under guidance. This has been vital to learning how to work in team-based development environments and has equipped me to follow best practices.",
     link: "https://github.com/leejmorel",
+  },
+  "Agile/Kanban": {
+    title: "Agile and Kanban based Software Development",
+    type: Category.Skills,
+    description:
+      "I am well-versed in the software development lifecycle, demonstrating proficiency in both Kanban and Agile methodologies. My familiarity with these frameworks enables me to navigate complex projects efficiently. I bring a strategic and adaptable approach to development processes, ensuring effective project management and delivery.",
+    link: "https://www.atlassian.com/agile/kanban",
   },
   Solala: {
     title: "Solala",

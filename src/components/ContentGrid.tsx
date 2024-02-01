@@ -1,24 +1,31 @@
 import React from "react";
 import { Grid, Paper, Typography } from "@mui/material";
-import { SidebarItem, sidebarBodyMap, Category } from "../types";
 import * as Images from "../assets/resume/DetailPhoto";
+import { SidebarItem, sidebarBodyMap, Category } from "../types";
 
 interface ContentGridProps {
-  type: Category;
+  type?: Category;
+  singleItem?: SidebarItem;
 }
 
-const ContentGrid: React.FC<ContentGridProps> = ({ type }) => {
-  const itemsOfType: SidebarItem[] = Object.values(sidebarBodyMap).filter(
-    (item) => {
-      return "type" in item && item.type === type;
-    }
-  );
+const ContentGrid: React.FC<ContentGridProps> = ({ type, singleItem }) => {
+  let itemsToDisplay: SidebarItem[] = [];
+
+  if (singleItem) {
+    // If a single item is provided, display only that item
+    itemsToDisplay = [singleItem];
+  } else {
+    // If no single item is provided, filter items by type
+    itemsToDisplay = Object.values(sidebarBodyMap).filter((item) => {
+      return !type || ("type" in item && item.type === type);
+    });
+  }
 
   return (
     <div className="app-body content-container">
       <div className="grid-container">
         <Grid container spacing={2}>
-          {itemsOfType.map((item) => (
+          {itemsToDisplay.map((item) => (
             <Grid item xs={12} md={6} lg={4} key={item.title}>
               <Paper>
                 {/* Display photo if available */}
@@ -30,11 +37,7 @@ const ContentGrid: React.FC<ContentGridProps> = ({ type }) => {
                     />
                   </div>
                 )}
-
-                {/* Display title */}
                 <Typography variant="h6">{item.title}</Typography>
-
-                {/* Display description */}
                 <Typography>{item.description}</Typography>
 
                 {/* Display link if available */}
