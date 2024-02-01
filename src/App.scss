@@ -119,6 +119,23 @@ $green-button: darken($green-primary, 10%);
             object-fit: contain;
           }
         }
+
+        .grid-heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding-left: 5px;
+
+          .icon {
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
 
       .social-container {

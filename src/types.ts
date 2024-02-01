@@ -40,6 +40,7 @@ export const categories: Category[] = [
 ];
 
 export interface SidebarItem {
+  label: string;
   title: string;
   type?: Category;
   description: string;
@@ -49,11 +50,13 @@ export interface SidebarItem {
 
 export const sidebarBodyMap = {
   Skills: {
+    label: "Skills",
     title: "Skills",
     description:
       "This category shows technical and interpersonal skillsets I have acquired through academic pursuits, personal projects, and professional experiences, showcasing adaptability and versatility.",
   },
   Python: {
+    label: "Python",
     title: "Python",
     type: Category.Skills,
     description:
@@ -62,18 +65,21 @@ export const sidebarBodyMap = {
     photo: "Python",
   },
   AI: {
+    label: "AI",
     title: "Artificial Intelligence",
     type: Category.Skills,
     description:
       "I have a broad exploration into the realm of Artificial Intelligence, encompassing machine learning, neural networks, and intelligent system design.",
   },
   NLP: {
+    label: "NLP",
     title: "Natural Language Processing (NLP)",
     type: Category.Skills,
     description:
       "Focus on Natural Language Processing, involving the interaction between computers and human languages. Explored techniques for text analysis and language understanding. This was the focus of my Undergraduate Research and presentation of my paper at AAAI.",
   },
   SQLite: {
+    label: "SQLite",
     title: "SQLite",
     type: Category.Skills,
     description:
@@ -82,12 +88,14 @@ export const sidebarBodyMap = {
     photo: "SQLite",
   },
   "Data Science": {
+    label: "Data Science",
     title: "Data Science",
     type: Category.Skills,
     description:
       "A key focus throughout my major was exploring Big Data and Statistics.",
   },
   "C#/Java": {
+    label: "C#/Java",
     title: "C#, Java, and C based languages",
     type: Category.Skills,
     description:
@@ -95,25 +103,29 @@ export const sidebarBodyMap = {
     link: "https://www.java.com/en/",
   },
   "React/Node.JS": {
-    title: "React, Node.JS, and javascript based languages",
+    label: "React/Node.JS",
+    title: "React, Node.JS, and Javascript based languages",
     type: Category.Skills,
     description:
       "While most of my projects are built using React due to its popularity, I am familiar with many JavaScript and Node.js-based tools such as Vue and Angular as well.",
     link: "https://react.dev/",
   },
   "Soft Skills": {
+    label: "Soft Skills",
     title: "Soft Skills",
     type: Category.Skills,
     description:
       "Possessing strong social communication skills, I am customer-focused and adept at delivering impactful presentations. My collaborative approach fosters effective teamwork, complemented by empathetic interpersonal skills. On a personal level, I am self-motivated and excel in efficient time management. My creativity, analytical thinking, and adaptability further contribute to a well-rounded skill set.",
   },
   Projects: {
+    label: "Projects",
     title: "Projects",
     description:
       "I explore new skills through projects both in and out of my classes. Projects made for classes are still built from scratch, and are proposed and built out by myself with the intent to explore particular themes under guidance. This has been vital to learning how to work in team-based development environments and has equipped me to follow best practices.",
     link: "https://github.com/leejmorel",
   },
   "Agile/Kanban": {
+    label: "Agile/Kanban",
     title: "Agile and Kanban based Software Development",
     type: Category.Skills,
     description:
@@ -121,6 +133,7 @@ export const sidebarBodyMap = {
     link: "https://www.atlassian.com/agile/kanban",
   },
   Solala: {
+    label: "Solala",
     title: "Solala",
     type: Category.Projects,
     description:
@@ -128,6 +141,7 @@ export const sidebarBodyMap = {
     link: "https://github.com/Solala-App/Solala",
   },
   PathKit: {
+    label: "PathKit",
     title: "PathKit",
     type: Category.Projects,
     description:
@@ -135,6 +149,7 @@ export const sidebarBodyMap = {
     link: "https://github.com/LeeJMorel/PathKit",
   },
   MarvelVerse: {
+    label: "MarvelVerse",
     title: "MarvelVerse",
     type: Category.Projects,
     description:
@@ -142,6 +157,7 @@ export const sidebarBodyMap = {
     link: "https://leejmorel.github.io/MarvelVerse/",
   },
   "Morse Code Translator": {
+    label: "Morse Code Translator",
     title: "Morse Code Translator",
     type: Category.Projects,
     description:
@@ -149,11 +165,13 @@ export const sidebarBodyMap = {
     link: "https://github.com/LeeJMorel/Morse-Code-Translator",
   },
   Experience: {
+    label: "Experience",
     title: "Experience",
     description:
       "Prior to my time as a student I had a successful business career, where I became a General Manager. I left this field in hopes to explore my passions deeper; however, I bring with me experience from my previous career. I excel working with teams, communications, and my time management capabilities have been the reason for the success of my many personal projects.",
   },
   "Undergraduate Research": {
+    label: "Undergraduate Research",
     title: "Undergraduate Research",
     type: Category.Experience,
     description:
@@ -161,6 +179,7 @@ export const sidebarBodyMap = {
     link: "https://aaai.org/aaai-conference/",
   },
   "UW Computer Science B.S. (June 2024)": {
+    label: "UW Computer Science B.S. (June 2024)",
     title: "UW Computer Science B.S.",
     type: Category.Experience,
     description:
@@ -168,12 +187,14 @@ export const sidebarBodyMap = {
     link: "https://www.cs.washington.edu/",
   },
   Classes: {
+    label: "Classes",
     title: "Classes",
     description:
       "This is a small collection of my undergraduate classes you may find relevant. During my time at The Allen School, I focused on my interests in AI and Statistics, which ultimately led to my published research on NLP Models under the mentorship of Lucille Njoo.",
     link: "https://www.cs.washington.edu/academics/ugrad/current-students/degree",
   },
   "Data Visualization": {
+    label: "Data Visualization",
     title: "Data Visualization",
     type: Category.Classes,
     description:
@@ -181,6 +202,7 @@ export const sidebarBodyMap = {
     link: "https://courses.cs.washington.edu/courses/cse442/23au/",
   },
   Databases: {
+    label: "Databases",
     title: "Databases",
     type: Category.Classes,
     description:
@@ -188,6 +210,7 @@ export const sidebarBodyMap = {
     link: "https://courses.cs.washington.edu/courses/cse444/23sp/",
   },
   "Data Algorithms": {
+    label: "Data Algorithms",
     title: "Data Algorithms",
     type: Category.Classes,
     description:
@@ -195,6 +218,7 @@ export const sidebarBodyMap = {
     link: "https://courses.cs.washington.edu/courses/cse332/23wi/",
   },
   "Intro to CS": {
+    label: "Intro to CS",
     title: "Intro to CS",
     type: Category.Classes,
     description:
@@ -202,6 +226,7 @@ export const sidebarBodyMap = {
     link: "https://www.cs.washington.edu/academics/ugrad/nonmajor-options/intro-courses",
   },
   "Software Development Cycle": {
+    label: "Software Development Cycle",
     title: "Software Development Cycle",
     type: Category.Classes,
     description:
@@ -209,6 +234,7 @@ export const sidebarBodyMap = {
     link: "https://nigini.github.io/SWEng/offers/CSE403-SP23/",
   },
   "Mobile App Development": {
+    label: "Mobile App Development",
     title: "Mobile App Development",
     type: Category.Classes,
     description:
@@ -216,6 +242,7 @@ export const sidebarBodyMap = {
     link: "https://courses.cs.washington.edu/courses/cse340/",
   },
   "Stats & Probability": {
+    label: "Stats & Probability",
     title: "Stats & Probability",
     type: Category.Classes,
     description:
