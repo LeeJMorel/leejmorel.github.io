@@ -28,7 +28,7 @@ export enum Category {
   Skills = "Skills",
   Projects = "Projects",
   Experience = "Experience",
-  Classes = "Classes",
+  Education = "Education",
 }
 
 export const categories: Category[] = [
@@ -36,7 +36,7 @@ export const categories: Category[] = [
   Category.Skills,
   Category.Projects,
   Category.Experience,
-  Category.Classes,
+  Category.Education,
 ];
 
 export interface SidebarItem {
@@ -60,9 +60,36 @@ export const sidebarBodyMap = {
     title: "Python",
     type: Category.Skills,
     description:
-      "I have used Python primarily in my undergraduate research on Natural Language Processing (NLP), as well as statistical analysis and simplistic AI Algorithms to further my practice and understanding in this complex field.",
+      "I have used Python primarily in my undergraduate research on Natural Language Processing (NLP), as well as statistical analysis and simplistic AI algorithms to further my practice and understanding in this complex field. I now use Python professionally to build backend systems for Delfina Care, with a focus on Firebase data injection and integration.",
     link: "https://www.python.org/",
     photo: "Python",
+  },
+  SQLite: {
+    label: "SQLite",
+    title: "SQLite",
+    type: Category.Skills,
+    description:
+      "I have extensive experience with SQLite, a powerful and lightweight cross-platform relational database management system. Proficient in designing and querying databases. I took classes which taught me how to navigate the complexities of a large database, as well as how to work with cloud systems such as Azure.",
+    link: "https://www.sqlite.org/index.html",
+    photo: "SQLite",
+  },
+  Java: {
+    label: "Java",
+    title: "Java, C#, and C based languages",
+    type: Category.Skills,
+    description:
+      "Java was the language I was taught my fundamentals in, and is as a result the language I have the most practice in. I have also developed many projects using C, Rust, and other related programming languages to build strong backend environments in a full-stack application.",
+    link: "https://www.java.com/en/",
+    photo: "Java",
+  },
+  "React/Node.JS": {
+    label: "React/Node.JS",
+    title: "React, Node.JS, and Javascript based languages",
+    type: Category.Skills,
+    description:
+      "React has become one of my primary tools at Delfina, where I build robust, accessible frontend interfaces for our pregnancy care platform. While I primarily work in React, I also have experience with other JavaScript and Node.js-based frameworks, including Vue and Angular.",
+    link: "https://react.dev/",
+    photo: "React",
   },
   AI: {
     label: "AI",
@@ -78,37 +105,12 @@ export const sidebarBodyMap = {
     description:
       "Focus on Natural Language Processing, involving the interaction between computers and human languages. Explored techniques for text analysis and language understanding. This was the focus of my Undergraduate Research and presentation of my paper at AAAI.",
   },
-  SQLite: {
-    label: "SQLite",
-    title: "SQLite",
-    type: Category.Skills,
-    description:
-      "I have extensive experience with SQLite, a powerful and lightweight cross-platform relational database management system. Proficient in designing and querying databases. I took classes which taught me how to navigate the complexities of a large database, as well as how to work with cloud systems such as Azure.",
-    link: "https://www.sqlite.org/index.html",
-    photo: "SQLite",
-  },
   "Data Science": {
     label: "Data Science",
     title: "Data Science",
     type: Category.Skills,
     description:
-      "A key focus throughout my major was exploring Big Data and Statistics.",
-  },
-  "C#/Java": {
-    label: "C#/Java",
-    title: "C#, Java, and C based languages",
-    type: Category.Skills,
-    description:
-      "Java was the language I was taught my fundamentals in, and is as a result the language I have the most practice in. I have also developed many projects using C, Rust, and other related programming languages to build strong backend environments in a full-stack application.",
-    link: "https://www.java.com/en/",
-  },
-  "React/Node.JS": {
-    label: "React/Node.JS",
-    title: "React, Node.JS, and Javascript based languages",
-    type: Category.Skills,
-    description:
-      "While most of my projects are built using React due to its popularity, I am familiar with many JavaScript and Node.js-based tools such as Vue and Angular as well.",
-    link: "https://react.dev/",
+      "Throughout my studies, I concentrated on Big Data and Statistical Analysis, working with large-scale datasets to identify trends and insights. I focused on applying statistical techniques for hypothesis testing, regression analysis, and predictive modeling. I also explored data pipelines and optimization strategies to process vast amounts of data efficiently. My experience in these areas allowed me to develop a solid understanding of data quality, cleaning, and the importance of statistical rigor in drawing reliable conclusions from complex datasets.",
   },
   "Soft Skills": {
     label: "Soft Skills",
@@ -121,16 +123,16 @@ export const sidebarBodyMap = {
     label: "Projects",
     title: "Projects",
     description:
-      "I explore new skills through projects both in and out of my classes. Projects made for classes are still built from scratch, and are proposed and built out by myself with the intent to explore particular themes under guidance. This has been vital to learning how to work in team-based development environments and has equipped me to follow best practices.",
+      "I continue to explore new skills through personal projects, which I design and build from scratch to deepen my understanding of specific technologies or ideas. While I previously created academic projects under guided themes during school, those experiences helped shape my ability to work in team-based environments and follow industry best practices—skills I now apply in my professional work.",
     link: "https://github.com/leejmorel",
   },
-  "Agile/Kanban": {
-    label: "Agile/Kanban",
-    title: "Agile and Kanban based Software Development",
+  "Software Development": {
+    label: "Software Development",
+    title: "Software Development Lifecycle & Version Control",
     type: Category.Skills,
     description:
-      "I am well-versed in the software development lifecycle, demonstrating proficiency in both Kanban and Agile methodologies. My familiarity with these frameworks enables me to navigate complex projects efficiently. I bring a strategic and adaptable approach to development processes, ensuring effective project management and delivery.",
-    link: "https://www.atlassian.com/agile/kanban",
+      "I follow the full software development lifecycle—from planning and implementation to testing, code review, and deployment. I work primarily with Git and GitHub to manage version control, maintain clean commit histories, and collaborate through structured pull request workflows. I’m comfortable navigating complex codebases, reviewing peer contributions, and ensuring stable, well-documented releases.",
+    link: "https://docs.github.com/en/pull-requests",
   },
   Solala: {
     label: "Solala",
@@ -177,76 +179,60 @@ export const sidebarBodyMap = {
     description:
       "Programming in Python and Jupyter Notebook for statistically relevant data analysis and visualization. Reading and summarizing other potentially relevant research papers. Prompt generation for LLMs such as ChatGPT and Llama 2 for exploratory research. Successfully co-authored and published a workshop paper to be orally presented April 2024 for the AAAI conference.",
     link: "https://aaai.org/aaai-conference/",
+    photo: "UW",
   },
-  "UW Computer Science B.S. (June 2024)": {
-    label: "UW Computer Science B.S. (June 2024)",
-    title: "UW Computer Science B.S.",
+  "Software Engineer I - Delfina": {
+    label: "Software Engineer I - Delfina",
+    title: "Software Engineer I – Fullstack Development",
     type: Category.Experience,
+    description:
+      "At Delfina, I build and maintain the intelligent pregnancy care platform as a fullstack engineer. My primary responsibilities include developing accessible, user-focused interfaces in React and creating scalable backend services in Python, including Firebase data integration. I contribute to production-level code through Git workflows and pull requests, ensuring clean, maintainable, and collaborative development across the platform.",
+    link: "https://www.delfinacare.com",
+    photo: "Delfina",
+  },
+  "UW Seattle Computer Science B.S. '24": {
+    label: "UW Seattle Computer Science B.S. '24",
+    title: "Paul G Allen Computer Science B.S., University of Washington 2024",
+    type: Category.Education,
     description:
       "Many of my projects began as a seed of an idea during the diverse courses I took during my undergraduate studies at University of Washington - Seattle. UW's Computer Science program is among some of the best in the world, ranking #16 globally. I attended as a transfer student, a difficult feat as they only accept 1-2% of transfer applicants a year, saving these spots for students who go beyond just exceptional grades.",
     link: "https://www.cs.washington.edu/",
+    photo: "UW",
   },
-  Classes: {
-    label: "Classes",
-    title: "Classes",
+  "University of WA Annual Dean’s List 2023": {
+    label: "University of WA Annual Dean’s List 2023",
+    title: "University of Washington Dean’s List",
+    type: Category.Education,
     description:
-      "This is a small collection of my undergraduate classes you may find relevant. During my time at The Allen School, I focused on my interests in AI and Statistics, which ultimately led to my published research on NLP Models under the mentorship of Lucille Njoo.",
-    link: "https://www.cs.washington.edu/academics/ugrad/current-students/degree",
+      "I was named to the University of Washington Dean's List in 2023 for maintaining a GPA higher than 3.5, an achievement that recognizes high academic performance and excellence at one of the top computer science programs in the world.",
+    link: "https://www.washington.edu/",
+    photo: "UW",
   },
-  "Data Visualization": {
-    label: "Data Visualization",
-    title: "Data Visualization",
-    type: Category.Classes,
+  "Chambers Commitment to Academic Excellence 2021": {
+    label: "Chambers Commitment to Academic Excellence 2021",
+    title: "Chambers Commitment to Academic Excellence Award",
+    type: Category.Education,
     description:
-      "Techniques for creating effective visualizations of data based on principles from graphic design, perceptual psychology, and statistics. Topics include visual encoding models, exploratory data analysis, visualization software, interaction techniques, graphical perception, color, animation, high-dimensional data, cartography, network visualization, and text visualization.",
-    link: "https://courses.cs.washington.edu/courses/cse442/23au/",
+      "Awarded to TRIO students demonstrating significant academic merit, the Chambers Commitment to Academic Excellence Award recognized my achievement of maintaining a 4.0 GPA over two or more years, reflecting my dedication to academic excellence.",
+    link: "https://www.trioprograms.org/",
+    photo: "Trio",
   },
-  Databases: {
-    label: "Databases",
-    title: "Databases",
-    type: Category.Classes,
+  "NAEOP TRIO Achiever Award 2021": {
+    label: "NAEOP TRIO Achiever Award 2021",
+    title: "NAEOP TRIO Achiever Award",
+    type: Category.Education,
     description:
-      "The relational data model and the SQL query language. Conceptual modeling: entity/relationships, normal forms. XML, XPath, and XQuery. Transactions: recovery and concurrency control. Implementation of a database system. A medium-sized project using a rational database backend",
-    link: "https://courses.cs.washington.edu/courses/cse444/23sp/",
+      "The NAEOP TRIO Achiever Award is presented to TRIO students who have made outstanding contributions to society. I was honored with this award in 2021 for my active involvement in initiatives that positively impact the community and my commitment to societal betterment.",
+    link: "https://naeop.org/",
+    photo: "Trio",
   },
-  "Data Algorithms": {
-    label: "Data Algorithms",
-    title: "Data Algorithms",
-    type: Category.Classes,
+  "Allen School Undergraduate Service Award 2023": {
+    label: "Allen School Undergraduate Service Award 2023",
+    title: "Allen School Undergraduate Service Award",
+    type: Category.Education,
     description:
-      "Covers abstract data types and structures including dictionaries, balanced trees, hash tables, priority queues, and graphs; sorting; asymptotic analysis; fundamental graph algorithms including graph search, shortest path, and minimum spanning trees; multithreading and parallel algorithms; P and NP complexity classes.",
-    link: "https://courses.cs.washington.edu/courses/cse332/23wi/",
-  },
-  "Intro to CS": {
-    label: "Intro to CS",
-    title: "Intro to CS",
-    type: Category.Classes,
-    description:
-      "Year-long series that covers the fundamentals of Computer Science. Builds in-depth knowledge of basics such as loops, arrays, lists, discrete mathematics, Big-O, binary trees, clean code principles, and more.",
-    link: "https://www.cs.washington.edu/academics/ugrad/nonmajor-options/intro-courses",
-  },
-  "Software Development Cycle": {
-    label: "Software Development Cycle",
-    title: "Software Development Cycle",
-    type: Category.Classes,
-    description:
-      "Fundamentals of software engineering using a group project as the basic vehicle. Topics covered include the software crisis, managing complexity, requirements specification, architectural and detailed design, testing and analysis, software process, and tools and environments.",
-    link: "https://nigini.github.io/SWEng/offers/CSE403-SP23/",
-  },
-  "Mobile App Development": {
-    label: "Mobile App Development",
-    title: "Mobile App Development",
-    type: Category.Classes,
-    description:
-      "User interfaces for computing systems, including principles and implementation techniques. Covers key topics and programming paradigms for interactive systems, such as event handling; graphical layout, design, and widgets; undo; accessibility; and context awareness. Provides experience with modern application domains and frameworks (e.g., mobile applications).",
-    link: "https://courses.cs.washington.edu/courses/cse340/",
-  },
-  "Stats & Probability": {
-    label: "Stats & Probability",
-    title: "Stats & Probability",
-    type: Category.Classes,
-    description:
-      "Examines fundamentals of enumeration and discrete probability; applications of randomness to computing; polynomial-time versus NP; and NP-completeness.",
-    link: "https://courses.cs.washington.edu/courses/cse312/22wi/",
+      "In 2023, I was honored with the Allen School Undergraduate Service Award, recognizing me as one of the top graduates (4 awarded out of 600 graduates) for exceptional student advocacy. My work in improving DEIA services and creating a study center significantly boosted academic performance and provided valuable support to the student community.",
+    link: "https://www.cs.washington.edu/",
+    photo: "Allen",
   },
 };

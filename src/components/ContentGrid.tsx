@@ -44,7 +44,7 @@ const ContentGrid: React.FC<ContentGridProps> = ({
         <Grid container spacing={2}>
           {itemsToDisplay.map((item) => (
             <Grid item xs={12} md={6} lg={4} key={item.title}>
-              <Paper elevation={3}>
+              <Paper elevation={3} sx={{ padding: 2 }}>
                 {/* Display photo if available */}
                 {item.photo && (
                   <div className="image-container">

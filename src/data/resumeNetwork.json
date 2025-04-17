@@ -21,7 +21,7 @@
     },
     {
       "attributes": {},
-      "label": "C#/Java",
+      "label": "Java",
       "x": -100,
       "y": 100,
       "id": "2",
@@ -84,7 +84,7 @@
     },
     {
       "attributes": {},
-      "label": "Agile/Kanban",
+      "label": "Software Development",
       "x": -50,
       "y": -20,
       "id": "9",
@@ -148,24 +148,24 @@
     {
       "attributes": {},
       "label": "Undergraduate Research",
-      "x": 33,
-      "y": 120,
+      "x": 130,
+      "y": 60,
       "id": "1001",
       "color": "rgb(255, 153, 0)",
       "size": 16
     },
     {
       "attributes": {},
-      "label": "UW Computer Science B.S. (June 2024)",
-      "x": 103,
-      "y": 60,
+      "label": "Software Engineer I - Delfina",
+      "x": 33,
+      "y": 120,
       "id": "1002",
       "color": "rgb(255, 153, 0)",
-      "size": 25
+      "size": 33
     },
     {
       "attributes": {},
-      "label": "Classes",
+      "label": "UW Seattle Computer Science B.S. '24",
       "x": 158,
       "y": 17,
       "id": "10000",
@@ -174,17 +174,17 @@
     },
     {
       "attributes": {},
-      "label": "Intro to CS",
-      "x": 130,
-      "y": 15,
+      "label": "Chambers Commitment to Academic Excellence 2021",
+      "x": 185,
+      "y": 5,
       "id": "10001",
       "color": "rgb(105,105,105)",
       "size": 13
     },
     {
       "attributes": {},
-      "label": "Data Algorithms",
-      "x": 133,
+      "label": "Allen School Undergraduate Service Award 2023",
+      "x": 183,
       "y": 30,
       "id": "10002",
       "color": "rgb(105,105,105)",
@@ -192,8 +192,8 @@
     },
     {
       "attributes": {},
-      "label": "Databases",
-      "x": 143,
+      "label": "University of WA Annual Dean’s List 2023",
+      "x": 173,
       "y": 42,
       "id": "10003",
       "color": "rgb(105,105,105)",
@@ -201,37 +201,10 @@
     },
     {
       "attributes": {},
-      "label": "Stats & Probability",
-      "x": 133,
-      "y": 0,
+      "label": "NAEOP TRIO Achiever Award 2021",
+      "x": 173,
+      "y": -5,
       "id": "10004",
-      "color": "rgb(105,105,105)",
-      "size": 13
-    },
-    {
-      "attributes": {},
-      "label": "Software Development Cycle",
-      "x": 143,
-      "y": -10,
-      "id": "10005",
-      "color": "rgb(105,105,105)",
-      "size": 13
-    },
-    {
-      "attributes": {},
-      "label": "Mobile App Development",
-      "x": 160,
-      "y": -15,
-      "id": "10006",
-      "color": "rgb(105,105,105)",
-      "size": 13
-    },
-    {
-      "attributes": {},
-      "label": "Data Visualization",
-      "x": 157,
-      "y": 47,
-      "id": "10007",
       "color": "rgb(105,105,105)",
       "size": 13
     }
@@ -672,30 +645,6 @@
     {
       "attributes": {},
       "size": 1,
-      "source": "10000",
-      "target": "10005",
-      "id": "100054",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10000",
-      "target": "10006",
-      "id": "100055",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10000",
-      "target": "10007",
-      "id": "100056",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
       "source": "10001",
       "target": "10000",
       "id": "100057",
@@ -728,238 +677,6 @@
     {
       "attributes": {},
       "size": 1,
-      "source": "10005",
-      "target": "10000",
-      "id": "100061",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10006",
-      "target": "10000",
-      "id": "100062",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10007",
-      "target": "10000",
-      "id": "100063",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10001",
-      "target": "2",
-      "id": "100064",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "2",
-      "target": "10001",
-      "id": "100065",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10001",
-      "target": "104",
-      "id": "100066",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "104",
-      "target": "10001",
-      "id": "100067",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10004",
-      "target": "7",
-      "id": "100068",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "7",
-      "target": "10004",
-      "id": "100069",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10004",
-      "target": "3",
-      "id": "100070",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "3",
-      "target": "10004",
-      "id": "100071",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10005",
-      "target": "5",
-      "id": "100072",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "5",
-      "target": "10005",
-      "id": "100073",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10005",
-      "target": "6",
-      "id": "100074",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "6",
-      "target": "10005",
-      "id": "100075",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10005",
-      "target": "101",
-      "id": "100076",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "101",
-      "target": "10005",
-      "id": "100077",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10006",
-      "target": "2",
-      "id": "100078",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "2",
-      "target": "10006",
-      "id": "100079",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10002",
-      "target": "2",
-      "id": "100080",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "2",
-      "target": "10002",
-      "id": "100081",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10003",
-      "target": "4",
-      "id": "100082",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "4",
-      "target": "10003",
-      "id": "100083",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10003",
-      "target": "2",
-      "id": "100084",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "2",
-      "target": "10003",
-      "id": "100085",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10007",
-      "target": "4",
-      "id": "100086",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "4",
-      "target": "10007",
-      "id": "100087",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "10007",
-      "target": "102",
-      "id": "100088",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
-      "source": "102",
-      "target": "10007",
-      "id": "100089",
-      "color": "rgb(105,105,105)"
-    },
-    {
-      "attributes": {},
-      "size": 1,
       "source": "1000",
       "target": "1002",
       "id": "100090",
@@ -977,7 +694,7 @@
       "attributes": {},
       "size": 1,
       "source": "10000",
-      "target": "1002",
+      "target": "1001",
       "id": "100092",
       "color": "rgb(255, 153, 0)"
     },
@@ -1104,18 +821,34 @@
     {
       "attributes": {},
       "size": 1,
-      "source": "10005",
-      "target": "9",
+      "source": "10000",
+      "target": "102",
       "id": "100108",
-      "color": "rgb( 0, 153, 255)"
+      "color": "rgb(153, 0, 255)"
     },
     {
       "attributes": {},
       "size": 1,
-      "source": "9",
-      "target": "10005",
+      "source": "102",
+      "target": "10000",
       "id": "100109",
-      "color": "rgb( 0, 153, 255)"
+      "color": "rgb(153, 0, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "10000",
+      "target": "101",
+      "id": "100110",
+      "color": "rgb(153, 0, 255)"
+    },
+    {
+      "attributes": {},
+      "size": 1,
+      "source": "101",
+      "target": "10000",
+      "id": "100111",
+      "color": "rgb(153, 0, 255)"
     }
   ]
 }

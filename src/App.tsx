@@ -206,12 +206,12 @@ function App() {
   };
 
   const downloadPdf = () => {
-    const pdfPath = "/LeeJMorelResume.pdf";
+    const pdfPath = "/LeeJMorelResume2025.pdf";
 
     // Create a hidden anchor tag
     const anchor = document.createElement("a");
     anchor.href = pdfPath;
-    anchor.download = "LeeJMorelResume.pdf";
+    anchor.download = "LeeJMorelResume2025.pdf";
 
     // Simulate a click on the anchor to trigger the download
     document.body.appendChild(anchor);
@@ -220,7 +220,7 @@ function App() {
   };
 
   const openEmailClient = () =>
-    (window.location.href = "mailto:ljanzen@cs.washington.edu");
+    (window.location.href = "mailto:ljanzen@uw.edu");
 
   const [showExpandedHeader, setShowExpandedHeader] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<Category>(
